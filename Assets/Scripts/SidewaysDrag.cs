@@ -11,11 +11,15 @@ public class SidewaysDrag : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
     }
-    private void OnCollisionStay(Collision collision)
+    private void FixedUpdate()
     {
-        Vector3 vel = rb.velocity;
-        vel = transform.InverseTransformVector(vel);
-        float sidewaysVelocity = vel.x;
-        rb.AddForceAtPosition(transform.right * -sidewaysVelocity *  multi,collision.contacts[0].point,ForceMode.Force);
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, -transform.up, out hit, 0.27f))
+        {
+            Vector3 vel = rb.velocity;
+            vel = transform.InverseTransformVector(vel);
+            float sidewaysVelocity = vel.x;
+            rb.AddForceAtPosition(transform.right * -sidewaysVelocity * multi, hit.point, ForceMode.Force);
+        }
     }
 }
