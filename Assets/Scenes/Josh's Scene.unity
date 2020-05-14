@@ -1033,7 +1033,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 662218965}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &662218967
 Camera:
   m_ObjectHideFlags: 0
@@ -1532,6 +1532,7 @@ GameObject:
   - component: {fileID: 897295834}
   - component: {fileID: 897295833}
   - component: {fileID: 897295832}
+  - component: {fileID: 897295835}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -1596,6 +1597,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &897295835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897295831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca642f3d672552488538a91ec854088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mTerrainData: {fileID: 15600000, guid: 4d0f26937193bfa46b5eeb932d36802f, type: 2}
+  alphamapWidth: 0
+  alphamapHeight: 0
+  mNumTextures: 0
 --- !u!1 &987041510
 GameObject:
   m_ObjectHideFlags: 0
@@ -2010,6 +2027,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1807947407
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1807947409}
+  - component: {fileID: 1807947408}
+  m_Layer: 0
+  m_Name: Terrain Checker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1807947408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807947407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca642f3d672552488538a91ec854088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mTerrainData: {fileID: 15600000, guid: 4d0f26937193bfa46b5eeb932d36802f, type: 2}
+  alphamapWidth: 0
+  alphamapHeight: 0
+  mNumTextures: 0
+--- !u!4 &1807947409
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807947407}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 169, y: 95, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1874988085
 GameObject:

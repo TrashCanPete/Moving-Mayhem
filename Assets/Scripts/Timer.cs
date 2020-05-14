@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -28,6 +29,11 @@ public class Timer : MonoBehaviour
         if(pause == false)
         {
             TimerCountDown();
+        }
+        if(timer <= 0)
+        {
+            //Reset to main menu scene
+            SceneManager.LoadScene(0);
         }
     }
     void ResetTimer()
