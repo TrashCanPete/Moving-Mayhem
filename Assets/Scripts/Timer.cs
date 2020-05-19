@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using GameAnalyticsSDK;
+using GameAnalyticsSDK.Setup;
+using GameAnalyticsSDK.Events;
 
 public class Timer : MonoBehaviour
 {
@@ -12,6 +15,7 @@ public class Timer : MonoBehaviour
     public bool pause;
     [SerializeField]
     private float startTimerValue;
+    public Score score;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +36,8 @@ public class Timer : MonoBehaviour
         }
         if(timer <= 0)
         {
+
+            GameAnalytics.NewResourceEvent(GAResourceFlowType.Source, "Points", score.score,"Mowed_Grass","score_G");
             //Reset to main menu scene
             SceneManager.LoadScene(0);
         }
