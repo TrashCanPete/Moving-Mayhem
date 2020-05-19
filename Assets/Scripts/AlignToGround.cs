@@ -5,8 +5,9 @@ using UnityEngine;
 public class AlignToGround : MonoBehaviour
 {
     [SerializeField] LayerMask layers;
-    [SerializeField] float multi;
+    [SerializeField] float groundMultiplier;
     [SerializeField] float airMultiplier;
+    [SerializeField] float selfRighting;
     Rigidbody rb;
     private void Start()
     {
@@ -15,17 +16,20 @@ public class AlignToGround : MonoBehaviour
     private void Update()
     {
         RaycastHit hit;
-        float force = multi;
+        float force = groundMultiplier;
         Vector3 alignment = Vector3.up;
-       if(Physics.Raycast(transform.position,-transform.up,out hit, 2.5f, layers, QueryTriggerInteraction.Ignore))
+       if(Physics.Raycast(transform.position,-transform.up,out hit, 1, layers, QueryTriggerInteraction.Ignore))
         {
             alignment = hit.normal;
             Debug.DrawRay(hit.point, hit.normal);
         }
         else
         {
-            force = multi * airMultiplier;
+            force =  airMultiplier;
         }
-        rb.AddTorque(Vector3.Cross(transform.up, alignment)*force);
+        float angle = Vector3.Angle(transform.up, Vector3.up);
+        if (angle > 90)
+            force *= selfRighting;
+        rb.AddTorque(Vector3.Cross(transform.up, alignment)*force,ForceMode.Force);
     }
 }

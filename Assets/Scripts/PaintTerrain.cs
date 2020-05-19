@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class PaintTerrain : MonoBehaviour
 {
+    [SerializeField] LayerMask paintLayers;
     [SerializeField] Terrain t;
+    [SerializeField] float paintingDist;
     const int size = 7;
     float[,,] map = new float[size, size, 2];
     private void Start()
@@ -32,14 +34,19 @@ public class PaintTerrain : MonoBehaviour
     {
         while (enabled)
         {
-            Vector3 pos = transform.position - t.GetPosition();
-            pos.x = pos.x / t.terrainData.size.x;
-            pos.z = pos.z / t.terrainData.size.z;
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, -transform.up, out hit, paintingDist, paintLayers))
+            {
+                Vector3 pos = transform.position - t.GetPosition();
+                pos.x = pos.x / t.terrainData.size.x;
+                pos.z = pos.z / t.terrainData.size.z;
 
-            pos.x = pos.x * t.terrainData.alphamapWidth;
-            pos.z = pos.z * t.terrainData.alphamapHeight;
+                pos.x = pos.x * t.terrainData.alphamapWidth;
+                pos.z = pos.z * t.terrainData.alphamapHeight;
 
-            t.terrainData.SetAlphamaps((int)pos.x, (int)pos.z, map);
+                t.terrainData.SetAlphamaps((int)pos.x, (int)pos.z, map);
+                
+            }
             yield return new WaitForSeconds(1 / 120);
         }
     }
