@@ -91,5 +91,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pause: 0
-  startTimerValue: 20
+  startTimerValue: 180
   score: {fileID: 0}
