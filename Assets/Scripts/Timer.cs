@@ -37,7 +37,7 @@ public class Timer : MonoBehaviour
         if(timer <= 0)
         {
 
-            GameAnalytics.NewResourceEvent(GAResourceFlowType.Source, "Points", score.score,"Mowed_Grass","score_G");
+            GameAnalytics.NewResourceEvent(GAResourceFlowType.Source, "Points", Score.points,"Mowed_Grass","score_G");
             //Reset to main menu scene
             SceneManager.LoadScene(0);
         }

@@ -5,16 +5,14 @@ using UnityEngine.UI;
 using GameAnalyticsSDK;
 public class Score : MonoBehaviour
 {
-    public int score;
+    public static int points;
     public Text scoreText;
-    // Start is called before the first frame update
     void Start()
     {
+        points = 0;
     }
-
-    // Update is called once per frame
     void Update()
     {
-        scoreText.text = (""+ score);
+        scoreText.text = (""+ points);
     }
 }
