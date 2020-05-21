@@ -6,6 +6,8 @@ public class Destruction : MonoBehaviour
 {
     public GameObject piece1;
     public GameObject piece2;
+
+    private Vector3 playerPos;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,15 +16,15 @@ public class Destruction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        playerPos = new Vector3(transform.position.x, transform.position.y, transform.position.z - 2);
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
             Debug.Log("Player colliding");
-            Instantiate(piece1, transform.position + (transform.up * 1.5f), transform.rotation);
-            Instantiate(piece2, transform.position + (transform.up * 1.5f), transform.rotation);
+            Instantiate(piece1, playerPos , transform.rotation);
+            Instantiate(piece2, playerPos , transform.rotation);
             Invoke("destroy", 0.05f);
         }
     }
