@@ -5,6 +5,7 @@ using UnityEngine;
 public class SetCenterOfMass : MonoBehaviour
 {
     Rigidbody rb;
+    [Tooltip("Center of mass will be set to the position of this object.")]
     [SerializeField] Transform target;
     private void Awake()
     {

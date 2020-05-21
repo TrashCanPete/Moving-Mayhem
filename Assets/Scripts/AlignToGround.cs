@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class AlignToGround : MonoBehaviour
 {
-    [SerializeField] LayerMask layers;
-    [SerializeField] float groundMultiplier;
-    [SerializeField] float airMultiplier;
-    [SerializeField] float selfRighting;
+    [Tooltip("Self righting force applied when grounded")]
+    [SerializeField] float groundedForce;
+    [Tooltip("Self righting force applied when in the air")]
+    [SerializeField] float airForce;
+    [Tooltip("Self righting force applied when upside down.")]
+    [SerializeField] float upsideDownForce;
     Rigidbody rb;
     private void Start()
     {
@@ -16,20 +18,20 @@ public class AlignToGround : MonoBehaviour
     private void Update()
     {
         RaycastHit hit;
-        float force = groundMultiplier;
+        float force = groundedForce;
         Vector3 alignment = Vector3.up;
-       if(Physics.Raycast(transform.position,-transform.up,out hit, 1, layers, QueryTriggerInteraction.Ignore))
+       if(Physics.Raycast(transform.position,-transform.up,out hit, 1))
         {
             alignment = hit.normal;
             Debug.DrawRay(hit.point, hit.normal);
         }
         else
         {
-            force =  airMultiplier;
+            force =  airForce;
         }
         float angle = Vector3.Angle(transform.up, Vector3.up);
         if (angle > 90)
-            force *= selfRighting;
+            force *= upsideDownForce;
         rb.AddTorque(Vector3.Cross(transform.up, alignment)*force,ForceMode.Force);
     }
 }

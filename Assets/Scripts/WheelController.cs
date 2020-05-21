@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+[RequireComponent(typeof(SphereCollider))]
 public class WheelController : MonoBehaviour
 {
     [Tooltip("Collider used for wheels.")]
-    [SerializeField] SphereCollider col;
+    SphereCollider col;
     [HideInInspector] public Rigidbody rb;
     List<ContactPoint> contacts = new List<ContactPoint>();
     Vector3 worldVelocity;
@@ -17,7 +17,9 @@ public class WheelController : MonoBehaviour
     float brakeFactor = 0;
     public float SidewaysSlip { get; private set; }
     public float ForwardSlip { get; private set; }
-    [Tooltip("This defines how the car transitions between gripping and drifting. the Y axis represents the amount of drift and the X axis represents the sideways velocity.")]
+
+    [Header("Grip settings")]
+    [Tooltip("This defines how the car transitions between gripping and drifting. the Y axis represents the amount of drift (0 = baseGrip, 1=driftGrip) and the X axis represents sideways velocity(m/s).")]
     public AnimationCurve gripCurve;
 
 #pragma warning disable 0649
@@ -25,12 +27,20 @@ public class WheelController : MonoBehaviour
     [SerializeField] float baseGrip = 4f;
     [Tooltip("This slip of the wheel when sliding. Setting this low will cause you to slide further when drifting.")]
     [SerializeField] float driftGrip = 0.4f;
+ 
+    [Range(0,1)]
+    [Tooltip("The higher this number the easier it is to maintain drifts.")]
+    [SerializeField] float driftMaintain;
+
+    [Space(2)]
+    [Header("Advanced Settings")]
     [Tooltip("This is the maximum amount that the wheel can slide")]
     [SerializeField] float maxSlip;
     [Tooltip("The lower this number the more easily the car will slide")]
     [SerializeField] float slipDiv;
-    [Tooltip("The amount slip reduces over time. a low number allows you to keep drifts going more easily, whereas a high number will quickly straighten out.")]
-    [SerializeField] float slipReduce;
+
+    [Space(2)]
+    [Header("Visual Settings")]
     [Tooltip("Object that contains the wheel mesh.")]
     [SerializeField] Transform visualWheel;
     [Tooltip("Particle effect to play when in contact with the ground. Make this a child of the wheel.")]
@@ -47,6 +57,7 @@ public class WheelController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        col = GetComponent<SphereCollider>();
     }
 
     public void PowerMotor(float power)
@@ -85,7 +96,7 @@ public class WheelController : MonoBehaviour
             }
             else
             {
-                SidewaysSlip = Mathf.Lerp(SidewaysSlip, newSlip, slipReduce);
+                SidewaysSlip = Mathf.Lerp(SidewaysSlip, newSlip, 1-driftMaintain);
             }
 
             Vector3 vel = rb.velocity;
@@ -128,28 +139,33 @@ public class WheelController : MonoBehaviour
         worldVelocity = rb.velocity;
         localVelocity = transform.InverseTransformVector(worldVelocity);
         CalcRpm();
-        brakeFactor = Mathf.Lerp(brakeFactor, 0, slipReduce * 2);
+        brakeFactor = Mathf.Lerp(brakeFactor, 0, (1-driftMaintain)*2);
         if (!IsGrounded)
             Rpm -= 300 * Time.fixedDeltaTime;
     }
-    public void Brake(float power)
+    public void Brake(float power,bool slip)
     {
         if (IsGrounded)
         {
-            Vector3 vel = rb.velocity;
-            vel = transform.InverseTransformVector(vel);
-            float forwardVel = vel.z * Mathf.Abs(vel.z);
-            forwardVel = Mathf.Clamp(forwardVel, -maxSlip, maxSlip);
-            float newSlip = Mathf.Abs(forwardVel / maxSlip);
-            if (newSlip > brakeFactor)
+            float friction =1.5f;
+            if (slip)
             {
-                brakeFactor = newSlip;
+                Vector3 vel = rb.velocity;
+                vel = transform.InverseTransformVector(vel);
+                float forwardVel = vel.z * Mathf.Abs(vel.z);
+                forwardVel = Mathf.Clamp(forwardVel, -maxSlip, maxSlip);
+                float newSlip = Mathf.Abs(forwardVel / maxSlip);
+                if (newSlip > brakeFactor)
+                {
+                    brakeFactor = newSlip;
+                }
+                else
+                {
+                    brakeFactor = Mathf.Lerp(brakeFactor, newSlip, 1 - driftMaintain);
+                }
+                friction = 1.5f - gripCurve.Evaluate(brakeFactor);
             }
-            else
-            {
-                brakeFactor = Mathf.Lerp(brakeFactor, newSlip, slipReduce);
-            }
-            float friction = 1.5f-gripCurve.Evaluate(brakeFactor);
+            
             Vector3 hitTangent = Vector3.ProjectOnPlane(rb.velocity.normalized, contacts[0].normal);
             rb.AddForceAtPosition(hitTangent * power * friction, contacts[0].point, ForceMode.Force);
         }

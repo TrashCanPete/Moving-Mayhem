@@ -9758,7 +9758,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a802ca7289c16c54a8e3cc1bf38c37b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  col: {fileID: 6971363008540548278}
   rb: {fileID: 0}
   gripCurve:
     serializedVersion: 2
@@ -9795,9 +9794,9 @@ MonoBehaviour:
     m_RotationOrder: 4
   baseGrip: 4
   driftGrip: 0.4
+  driftMaintain: 1
   maxSlip: 400
   slipDiv: 400
-  slipReduce: 0.01
   visualWheel: {fileID: 6971363007171891568}
   contactParticles: {fileID: 6971363007996261340}
   slipParticles: {fileID: 6971363007763384992}

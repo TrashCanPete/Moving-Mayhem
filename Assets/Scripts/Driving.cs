@@ -1,8 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-
+[RequireComponent(typeof(Steering))]
 public class Driving : MonoBehaviour
 {
     [System.Serializable]
@@ -16,20 +15,36 @@ public class Driving : MonoBehaviour
             name = "test";
         }
     }
-    public float enginePower;
-    public float reversePower;
+    [Header("Engine")]
+    public float enginePower = 3600;
+    public float reversePower = 2000;
+    
+    [Tooltip("Allows you to adjust the engines power at different speeds. The Y axis represents power and the X axis represents current speed(m/s).")]
+    [SerializeField] AnimationCurve powerBySpeed;
+
+    [Range(0, 1)][Tooltip("0 for front wheels drive, 1 for rear wheel drive.")]
+    [SerializeField] float powerDistribution;
+
+    [Space(2)]
+    [Header("Brakes")]
     public float brakePower;
-    public bool Reversing { get; private set; }
-    public bool IsGrounded { get; private set; }
-    [Tooltip("Front wheels of the car.")]
+
+    public float handbrakePower;
+
+    [Tooltip("0 for front bias, 1 for rear bias.")]
+    [Range(0, 1)]
+    [SerializeField] float brakeBias;
+    
+    [Space(2)][Header("Wheels")][Tooltip("Front wheels of the car.")]
     public Wheel[] frontWheels = new Wheel[2] { new Wheel("Left"), new Wheel("Right") };
+
     [Tooltip("Rear wheels of the car. You can have any number of wheels provided it is at least more than one.")]
     public WheelController[] rearWheels;
-    [Tooltip("Allows you to adjust the engines power at different speeds. The Y axis represents power and the X axis represents current speed.")]
-    [SerializeField] AnimationCurve powerBySpeed;
-    [Range(0, 1)] [Tooltip("0 for front wheels drive, 1 for rear wheel drive.")] [SerializeField] float powerDistribution;
-    [Range(0, 1)] [Tooltip("0 for front bias, 1 for rear bias.")] [SerializeField] float brakeBias;
+
+    public bool Reversing { get; private set; }
+    public bool IsGrounded { get; private set; }
     float zAxis;
+    bool handbraking = false;
     Rigidbody rb;
     Vector3 localVelocity;
     public float DriftFactor { get; private set; }
@@ -41,6 +56,7 @@ public class Driving : MonoBehaviour
     private void Update()
     {
         zAxis = Input.GetAxis("Vertical");
+        handbraking = Input.GetButton("Handbrake");
     }
     void NullChecks()
     {
@@ -60,22 +76,29 @@ public class Driving : MonoBehaviour
     private void FixedUpdate()
     {
         localVelocity = transform.InverseTransformVector(rb.velocity);
-        if (zAxis > 0)
+        if (!handbraking)
         {
-            Reversing = false;
-            ApplyPower(enginePower);
+            if (zAxis > 0)
+            {
+                Reversing = false;
+                ApplyPower(enginePower);
+            }
+            else if (zAxis < 0)
+            {
+                if (localVelocity.z < 0.5f)
+                {
+                    Reversing = true;
+                    ApplyPower(reversePower);
+                }
+                else
+                {
+                    ApplyBrake(brakePower,false);
+                }
+            }
         }
-        else if (zAxis < 0)
+        else
         {
-            if (localVelocity.z < 0.5f)
-            {
-                Reversing = true;
-                ApplyPower(reversePower);
-            }
-            else
-            {
-                ApplyBrake();
-            }
+            ApplyBrake(handbrakePower, true);
         }
         ApplyGrip();
     }
@@ -116,17 +139,17 @@ public class Driving : MonoBehaviour
             rearWheels[i].PowerMotor(rearPower);
         }
     }
-    void ApplyBrake()
+    void ApplyBrake(float power, bool slip)
     {
-        float frontBrakePower = brakePower * zAxis * (1 - brakeBias);
-        float rearBrakePower = brakePower * zAxis * (brakeBias);
+        float frontBrakePower = power * zAxis * (1 - brakeBias);
+        float rearBrakePower = power * zAxis * (brakeBias);
         for (int i = 0; i < frontWheels.Length; i++)
         {
-            frontWheels[i].wheelScript.Brake(frontBrakePower);
+            frontWheels[i].wheelScript.Brake(frontBrakePower,slip);
         }
         for (int i = 0; i < rearWheels.Length; i++)
         {
-            rearWheels[i].Brake(rearBrakePower);
+            rearWheels[i].Brake(rearBrakePower,slip);
         }
     }
 }

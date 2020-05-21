@@ -5,12 +5,11 @@ using UnityEngine;
 public class PaintTerrain : MonoBehaviour
 {
     [SerializeField] LayerMask paintLayers;
-    public Terrain t;
-    public GameObject currentTerrain;
+    [HideInInspector] public Terrain t;
+    [HideInInspector] public GameObject currentTerrain;
     [SerializeField] float paintingDist;
     const int size = 7;
     float[,,] map = new float[size, size, 2];
-    public Vector3 pos;
     float[] textureValues = new float[2];
 
     private void Start()
@@ -43,36 +42,39 @@ public class PaintTerrain : MonoBehaviour
                             currentTerrain = hit.transform.gameObject;
                         }
                     }
-                    GetPos();
-                    Paint();
+                    
+                    Paint(transform.position);
                 }
             }
             yield return new WaitForSeconds(1 /60);
         }
     }
     
-    void Paint()
+    void Paint(Vector3 position)
     {
-        CheckTexture();
+        Vector3 checkingPos = GetPos(transform.position+transform.forward*1.5f);
+        CheckTexture(checkingPos);
+        Vector3 pos = GetPos(position);
         if (textureValues[0] == 0)
         {
             Score.points++;
         }
         t.terrainData.SetAlphamaps((int)pos.x, (int)pos.z, map);
     }
-    void GetPos()
+    Vector3 GetPos(Vector3 position)
     {
-        pos = (transform.position+new Vector3(-0.5f,0,-0.5f)) - t.GetPosition();
+        Vector3 pos = (position+new Vector3(-0.5f,0,-0.5f)) - t.GetPosition();
         pos.x = pos.x / t.terrainData.size.x;
         pos.z = pos.z / t.terrainData.size.z;
         pos.x = pos.x * t.terrainData.alphamapWidth;
         pos.z = pos.z * t.terrainData.alphamapHeight;
         pos.x = Mathf.Clamp(pos.x, 0, t.terrainData.alphamapWidth-size);
         pos.z = Mathf.Clamp(pos.z, 0, t.terrainData.alphamapHeight-size);
+        return pos;
     }
-    void CheckTexture()
+    void CheckTexture(Vector3 position)
     {
-        float[,,] aMap = t.terrainData.GetAlphamaps((int)pos.x, (int)pos.z, 1, 1);
+        float[,,] aMap = t.terrainData.GetAlphamaps((int)position.x, (int)position.z, 1, 1);
         textureValues[0] = aMap[0, 0, 0];
         textureValues[1] = aMap[0, 0, 1];
     }

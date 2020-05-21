@@ -11,13 +11,13 @@ public class Steering : MonoBehaviour
     Rigidbody RightWheel;
     [Tooltip("Turning radius of the wheels. Setting this lower makes the car turn sharper. If you want to change it during runtime use SetTurniningAngles()")]
     [SerializeField] float turningRadius;
-    [Tooltip("The force applied to turn the wheels. I reccomend leaving this at the default value unless you have issues.")]
-    [SerializeField] float steeringPower;
     float wheelBase = 2.17f; //set these up to calculate automatically pls
     float axleWidth = 1.758f;
     Driving driving;
     [Tooltip("Allows you to adjust how hard the car turns when you are drifting. The Y axis represents a multiplier to turning and the X axis represents the amount of slip.")]
-    [SerializeField] AnimationCurve driftingMulti;
+    [SerializeField] AnimationCurve driftingAssist;
+    [Tooltip("The force applied to turn the wheels. I reccomend leaving this at the default value unless you have issues.")]
+    [SerializeField] float steeringPower = 5000;
 #pragma warning restore 0649
     float xAxis;
 
@@ -80,7 +80,7 @@ public class Steering : MonoBehaviour
     private void Update()
     {
         xAxis = Input.GetAxis("Horizontal");
-        xAxis = xAxis * driftingMulti.Evaluate(driving.DriftFactor);
+        xAxis = xAxis * (1+driftingAssist.Evaluate(driving.DriftFactor));
     }
     private void FixedUpdate()
     {
