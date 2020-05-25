@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FinnScene.unity
     guid: 0e99a0644308d354e861fc7225a3e646
+  - enabled: 1
+    path: Assets/Scenes/NameChooser Scene.unity
+    guid: 52ed052159ee33a4a8dd28550a447744
   m_configObjects: {}
