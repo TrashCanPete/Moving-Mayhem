@@ -91,5 +91,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pause: 0
-  startTimerValue: 180
-  score: {fileID: 0}
+  startTimerValue: 30
+  score: {fileID: 5489328395846981384, guid: dbcdf8172eca75445b25c47ce3f44622, type: 3}

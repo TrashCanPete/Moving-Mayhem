@@ -11,17 +11,29 @@ public class Highscores : MonoBehaviour
 
     public Highscore[] highscoresList;
 
+    private static Highscores instance;
+    public static Highscores Instance { get { return instance; } }
+
+    DisplayHighscores highscoresDisplay;
+
+
+
     private void Awake()
     {
-        AddNewHighscore("Josh", 50);
-        AddNewHighscore("Finn", 85);
-        AddNewHighscore("Pete", 92);
-
-        DownloadHighscores();
+        if(instance != null && instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        highscoresDisplay = GetComponent<DisplayHighscores>();
     }
-    public void AddNewHighscore(string username, int score)
+    public static void AddNewHighscore(string username, int score)
     {
-        StartCoroutine(UploadNewHighscore(username, score));
+        instance.StartCoroutine(instance.UploadNewHighscore(username, score));
     }
     IEnumerator UploadNewHighscore(string username, int score)
     {
@@ -31,6 +43,7 @@ public class Highscores : MonoBehaviour
         if (string.IsNullOrEmpty(www.error))
         {
             print("upload successful");
+            DownloadHighscores();
         }
         else
         {
@@ -40,7 +53,7 @@ public class Highscores : MonoBehaviour
 
     public void DownloadHighscores()
     {
-        StartCoroutine("DownloadHighscoresFromDatabase");
+        StartCoroutine(DownloadHighscoresFromDatabase());
     }
 
     IEnumerator DownloadHighscoresFromDatabase()
@@ -53,6 +66,7 @@ public class Highscores : MonoBehaviour
         if (string.IsNullOrEmpty(www.error))
         {
             FormatHighscores(www.downloadHandler.text);
+            highscoresDisplay.OnHighscoresDownloaded(highscoresList);
         }
         else
         {
