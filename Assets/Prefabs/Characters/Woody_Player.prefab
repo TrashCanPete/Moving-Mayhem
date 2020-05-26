@@ -5224,6 +5224,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   steeringPower: 5000
   anim: {fileID: 3048124068526357788}
+  xAxis: 0
 --- !u!54 &2478265560390288258
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5351,6 +5352,7 @@ MonoBehaviour:
   anim: {fileID: 3048124068526357788}
   driving: {fileID: 0}
   steering: {fileID: 0}
+  timerScript: {fileID: 0}
 --- !u!1 &2478265560577912993
 GameObject:
   m_ObjectHideFlags: 0
@@ -5755,7 +5757,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2478265561107497392}
-  m_LocalRotation: {x: -0, y: -0.6669896, z: -0, w: 0.7450671}
+  m_LocalRotation: {x: 0, y: -0.66698766, z: 0, w: 0.7450688}
   m_LocalPosition: {x: 17.548, y: 0.88, z: 21.185}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

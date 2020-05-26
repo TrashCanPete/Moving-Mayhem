@@ -22,7 +22,7 @@ public class Steering : MonoBehaviour
     public Animator anim;
 
 #pragma warning restore 0649
-    float xAxis;
+    public float xAxis;
 
     private void Start()
     {
@@ -91,23 +91,17 @@ public class Steering : MonoBehaviour
         {
             Steer(LeftWheel, innerAngle);
             Steer(RightWheel, outerAngle);
-            anim.SetBool("Left Turn", true);
-            anim.SetBool("Right Turn", false);
         }
         else if (xAxis > 0)
         {
             Steer(LeftWheel, outerAngle);
             Steer(RightWheel, innerAngle);
-            anim.SetBool("Right Turn", true);
-            anim.SetBool("Left Turn", false);
         }
 
         else
         {
             CheckStraight(LeftWheel);
             CheckStraight(RightWheel);
-            anim.SetBool("Left Turn", false);
-            anim.SetBool("Right Turn", false);
         }
     }
     void CheckStraight(Rigidbody r)

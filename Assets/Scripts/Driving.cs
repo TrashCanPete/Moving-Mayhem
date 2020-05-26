@@ -43,7 +43,7 @@ public class Driving : MonoBehaviour
 
     public bool Reversing { get; private set; }
     public bool IsGrounded { get; private set; }
-    public bool IsDriftinng { get; private set; }
+    public bool IsDrifting { get; private set; }
     float zAxis;
     bool handbraking = false;
     Rigidbody rb;
@@ -60,7 +60,7 @@ public class Driving : MonoBehaviour
     public void Update()
     {
         zAxis = Input.GetAxis("Vertical");
-        handbraking = Input.GetButton("Handbrake");        
+        handbraking = Input.GetButtonDown("Handbrake");        
     }
     void NullChecks()
     {
@@ -125,7 +125,7 @@ public class Driving : MonoBehaviour
                 IsGrounded = true;
         }
         DriftFactor /= (frontWheels.Length + rearWheels.Length);
-        IsDriftinng = DriftFactor > driftThreshhold ? true : false;
+        IsDrifting = DriftFactor > driftThreshhold ? true : false;
         
     }
     void ApplyPower(float power)

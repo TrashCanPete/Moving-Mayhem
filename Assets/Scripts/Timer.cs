@@ -12,7 +12,7 @@ public class Timer : MonoBehaviour
 {
     private Text timerUI;
     [SerializeField]
-    private float timer;
+    public float timer;
     public bool pause;
     [SerializeField]
     private float startTimerValue;
@@ -41,19 +41,8 @@ public class Timer : MonoBehaviour
         }
         if(timer <= 0)
         {
-            /*//name generator
-             * string username = "";
-            string alphabet = "abcdefghijklmnopqrstuvwxyz";
-
-            for (int i = 0; i < 3; i++)
-            {
-                username += alphabet[UnityEngine.Random.Range(0, alphabet.Length)];
-            }
-            */
-            GameAnalytics.NewResourceEvent(GAResourceFlowType.Source, "Points", Score.points, "Mowed_Grass", "score_G");
-            //Reset to main menu scene
-
-            SceneManager.LoadScene(3);
+            
+            Invoke("TimesUp", 5);
         }
     }
     void ResetTimer()
@@ -63,5 +52,22 @@ public class Timer : MonoBehaviour
     void TimerCountDown()
     {
         timer -= 1 * Time.deltaTime;
+    }
+
+    void TimesUp()
+    {
+        /*//name generator
+             * string username = "";
+            string alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+            for (int i = 0; i < 3; i++)
+            {
+                username += alphabet[UnityEngine.Random.Range(0, alphabet.Length)];
+            }
+            */
+        GameAnalytics.NewResourceEvent(GAResourceFlowType.Source, "Points", Score.points, "Mowed_Grass", "score_G");
+        //Reset to main menu scene
+
+        SceneManager.LoadScene(3);
     }
 }
