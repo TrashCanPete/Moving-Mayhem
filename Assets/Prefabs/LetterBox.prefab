@@ -244,6 +244,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6267955781876414710}
   - component: {fileID: 3640914508880253776}
+  - component: {fileID: 2473943619367035866}
   m_Layer: 0
   m_Name: LetterBox
   m_TagString: Untagged
@@ -283,6 +284,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   piece1: {fileID: 7728692043899003041, guid: 77b4f3434e094a54fa97d577ccdccbf6, type: 3}
   piece2: {fileID: 319867225676343190, guid: 0c662a59be042154e889af85f34d539f, type: 3}
+--- !u!65 &2473943619367035866
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6964563162843548389}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3769226, y: 1.457593, z: 0.44625854}
+  m_Center: {x: 0.23678017, y: -0.5012193, z: -0.15370178}
 --- !u!1 &8768240161537873389
 GameObject:
   m_ObjectHideFlags: 0
