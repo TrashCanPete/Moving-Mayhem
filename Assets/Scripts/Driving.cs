@@ -43,10 +43,12 @@ public class Driving : MonoBehaviour
 
     public bool Reversing { get; private set; }
     public bool IsGrounded { get; private set; }
+    public bool IsDriftinng { get; private set; }
     float zAxis;
     bool handbraking = false;
     Rigidbody rb;
     Vector3 localVelocity;
+    const float driftThreshhold = 0.18f;
     public float DriftFactor { get; private set; }
 
 
@@ -123,6 +125,8 @@ public class Driving : MonoBehaviour
                 IsGrounded = true;
         }
         DriftFactor /= (frontWheels.Length + rearWheels.Length);
+        IsDriftinng = DriftFactor > driftThreshhold ? true : false;
+        
     }
     void ApplyPower(float power)
     {
