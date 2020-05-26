@@ -49,7 +49,6 @@ public class Driving : MonoBehaviour
     Vector3 localVelocity;
     public float DriftFactor { get; private set; }
 
-    public Animator anim;
 
     private void Start()
     {

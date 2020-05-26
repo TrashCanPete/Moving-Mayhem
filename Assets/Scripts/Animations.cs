@@ -39,6 +39,5 @@ public class Animations : MonoBehaviour
             anim.SetTrigger("Reverse Crashing");
         }
     }
-
     
 }
