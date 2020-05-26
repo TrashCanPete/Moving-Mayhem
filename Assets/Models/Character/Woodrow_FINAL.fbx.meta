@@ -105,15 +105,15 @@ ModelImporter:
       name: Driving Idle
       takeName: Take 001
       internalID: 0
-      firstFrame: 410
-      lastFrame: 410
+      firstFrame: 640
+      lastFrame: 641
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -132,35 +132,6 @@ ModelImporter:
       additiveReferencePoseFrame: 1
     - serializedVersion: 16
       name: Left Turn
-      takeName: Take 001
-      internalID: 0
-      firstFrame: 410
-      lastFrame: 415
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 1
-    - serializedVersion: 16
-      name: Right Turn
       takeName: Take 001
       internalID: 0
       firstFrame: 420
@@ -189,7 +160,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 1
     - serializedVersion: 16
-      name: Drift Left
+      name: Right Turn
       takeName: Take 001
       internalID: 0
       firstFrame: 430
@@ -218,7 +189,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 1
     - serializedVersion: 16
-      name: Drift Right
+      name: Drift Left
       takeName: Take 001
       internalID: 0
       firstFrame: 440
@@ -247,11 +218,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 1
     - serializedVersion: 16
-      name: Reversing
+      name: Drift Right
       takeName: Take 001
       internalID: 0
       firstFrame: 450
-      lastFrame: 465
+      lastFrame: 455
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -276,11 +247,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 1
     - serializedVersion: 16
-      name: Reverse Idle
+      name: Reversing
       takeName: Take 001
       internalID: 0
-      firstFrame: 465
-      lastFrame: 465
+      firstFrame: 460
+      lastFrame: 475
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -308,8 +279,8 @@ ModelImporter:
       name: Reverse Crashing
       takeName: Take 001
       internalID: 0
-      firstFrame: 465
-      lastFrame: 485
+      firstFrame: 475
+      lastFrame: 495
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -337,8 +308,8 @@ ModelImporter:
       name: Crashing
       takeName: Take 001
       internalID: 0
-      firstFrame: 500
-      lastFrame: 520
+      firstFrame: 510
+      lastFrame: 530
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -366,8 +337,8 @@ ModelImporter:
       name: Celebrating
       takeName: Take 001
       internalID: 0
-      firstFrame: 520
-      lastFrame: 550
+      firstFrame: 530
+      lastFrame: 560
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -395,8 +366,8 @@ ModelImporter:
       name: Finish Game
       takeName: Take 001
       internalID: 0
-      firstFrame: 550
-      lastFrame: 630
+      firstFrame: 560
+      lastFrame: 640
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -423,7 +394,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 10
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -470,7 +441,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 10
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

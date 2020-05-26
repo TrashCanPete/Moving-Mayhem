@@ -48,15 +48,18 @@ public class Driving : MonoBehaviour
     Rigidbody rb;
     Vector3 localVelocity;
     public float DriftFactor { get; private set; }
+
+    public Animator anim;
+
     private void Start()
     {
         NullChecks();
         rb = GetComponent<Rigidbody>();
     }
-    private void Update()
+    public void Update()
     {
         zAxis = Input.GetAxis("Vertical");
-        handbraking = Input.GetButton("Handbrake");
+        handbraking = Input.GetButton("Handbrake");        
     }
     void NullChecks()
     {

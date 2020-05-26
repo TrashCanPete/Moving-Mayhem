@@ -18,6 +18,9 @@ public class Steering : MonoBehaviour
     [SerializeField] AnimationCurve driftingAssist;
     [Tooltip("The force applied to turn the wheels. I reccomend leaving this at the default value unless you have issues.")]
     [SerializeField] float steeringPower = 5000;
+
+    public Animator anim;
+
 #pragma warning restore 0649
     float xAxis;
 
@@ -88,16 +91,23 @@ public class Steering : MonoBehaviour
         {
             Steer(LeftWheel, innerAngle);
             Steer(RightWheel, outerAngle);
+            anim.SetBool("Left Turn", true);
+            anim.SetBool("Right Turn", false);
         }
         else if (xAxis > 0)
         {
             Steer(LeftWheel, outerAngle);
             Steer(RightWheel, innerAngle);
+            anim.SetBool("Right Turn", true);
+            anim.SetBool("Left Turn", false);
         }
+
         else
         {
             CheckStraight(LeftWheel);
             CheckStraight(RightWheel);
+            anim.SetBool("Left Turn", false);
+            anim.SetBool("Right Turn", false);
         }
     }
     void CheckStraight(Rigidbody r)
