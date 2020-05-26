@@ -27,11 +27,6 @@ public class Animations : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
-    {
-        if
-    }
-
     private void OnCollisionEnter(Collision collision)
     {
 
