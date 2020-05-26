@@ -5,8 +5,8 @@ using UnityEngine;
 public class Animations : MonoBehaviour
 {
     public Animator anim;
-    public Driving driving;
-    public Steering steering;
+    private Driving driving;
+    private Steering steering;
     public Timer timerScript;
 
     // Start is called before the first frame update
