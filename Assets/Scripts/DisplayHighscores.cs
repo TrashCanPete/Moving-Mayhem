@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 public class DisplayHighscores : MonoBehaviour
 {
-    public Text[] highscoreTexts;
+    public TMP_Text[] highscoreTexts;
     Highscores highscoreManager;
 
     void Start()
