@@ -13,6 +13,7 @@ public class Menu : MonoBehaviour
         dontDestroy = FindObjectOfType<DontDestroyOnLoad>().GetComponent<DontDestroyOnLoad>();
         crunchCamera = GameObject.FindGameObjectWithTag("CrunchCamera");
         renderCanvas = GetComponent<Canvas>();
+        
     }
     public void LoadScene(int _Level)
     {
