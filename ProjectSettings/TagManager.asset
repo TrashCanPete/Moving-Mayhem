@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Grass
   - Obstacle
+  - CrunchCamera
   layers:
   - Default
   - TransparentFX
