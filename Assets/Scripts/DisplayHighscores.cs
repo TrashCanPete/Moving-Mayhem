@@ -7,6 +7,8 @@ public class DisplayHighscores : MonoBehaviour
 {
     public TMP_Text[] highscoreTexts;
     Highscores highscoreManager;
+    [SerializeField]
+    private string columnSpace = "            ";
 
     void Start()
     {
@@ -22,10 +24,10 @@ public class DisplayHighscores : MonoBehaviour
     {
         for (int i = 0; i < highscoreTexts.Length; i++)
         {
-            highscoreTexts[i].text = i + 1 + ". ";
+            highscoreTexts[i].text = i + 1 + "";
             if(highscoreList.Length > i)
             {
-                highscoreTexts[i].text += highscoreList[i].username + "- " + highscoreList[i].score;
+                highscoreTexts[i].text += columnSpace + highscoreList[i].username + columnSpace + highscoreList[i].score;
             }
         }
     }

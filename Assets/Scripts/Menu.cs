@@ -7,13 +7,24 @@ public class Menu : MonoBehaviour
     public DontDestroyOnLoad dontDestroy;
     public GameObject crunchCamera;
     public Canvas renderCanvas;
-    //DisplayHighscores displayhighscores;
+    public GameObject highScoresGroup;
+
+
     private void Start()
     {
         dontDestroy = FindObjectOfType<DontDestroyOnLoad>().GetComponent<DontDestroyOnLoad>();
         crunchCamera = GameObject.FindGameObjectWithTag("CrunchCamera");
         renderCanvas = GetComponent<Canvas>();
+        StartCoroutine(SwitchScoresGroupOn());
         
+    }
+
+    private void Update()
+    {
+        if (SceneManager.GetSceneByName("Menu Scene").isLoaded && (Input.anyKey))
+        {
+            LoadScene(1);
+        }
     }
     public void LoadScene(int _Level)
     {
@@ -25,4 +36,25 @@ public class Menu : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public IEnumerator SwitchScoresGroupOn()
+    {
+        yield return new WaitForSeconds(3f);
+        highScoresGroup.SetActive(true);
+        StartCoroutine(SwitchOffScoresGroup());
+    }
+    
+    void SetScoresActive()
+    {
+        highScoresGroup.SetActive(true);
+        StartCoroutine(SwitchOffScoresGroup());
+    }
+
+    public IEnumerator SwitchOffScoresGroup()
+    {
+        yield return new WaitForSeconds(9.9f);
+        highScoresGroup.SetActive(false);
+        StartCoroutine(SwitchScoresGroupOn());
+    }
+
 }
