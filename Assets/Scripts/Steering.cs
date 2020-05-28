@@ -22,7 +22,7 @@ public class Steering : MonoBehaviour
     public Animator anim;
 
 #pragma warning restore 0649
-    public float xAxis;
+    [HideInInspector] public float xAxis;
 
     private void Start()
     {

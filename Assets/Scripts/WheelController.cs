@@ -49,11 +49,11 @@ public class WheelController : MonoBehaviour
     [SerializeField] ParticleSystem slipParticles;
     #pragma warning restore 0649
 
-    const float slipParticleThreshhold = 0.05f;
+    const float slipParticleThreshhold = 0.18f;
     const float airGrip = 0.2f;
     const float maxRpm = 8000; //This should probably go somewhere else but it's here for now;
     const float airRpmIncrease = 3;
-
+    bool onGrass = false;
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -104,7 +104,7 @@ public class WheelController : MonoBehaviour
             float force = rb.mass * vel.x;
             rb.AddForceAtPosition(-transform.right * force * newGrip, contacts[0].point, ForceMode.Force);
 
-            if (SidewaysSlip > slipParticleThreshhold)
+            if (SidewaysSlip > slipParticleThreshhold&&onGrass)
             {
                 PlayEffect(slipParticles);
             }
@@ -172,7 +172,17 @@ public class WheelController : MonoBehaviour
     }
     private void OnCollisionStay(Collision collision)
     {
-        PlayEffect(contactParticles);
+        if (collision.gameObject.tag == "Grass")
+        {
+            PlayEffect(contactParticles);
+            onGrass = true;
+        }
+        else
+        {
+            StopEffect(contactParticles);
+            StopEffect(slipParticles);
+            onGrass = false;
+        }
         IsGrounded = true;
         collision.GetContacts(contacts);
     }

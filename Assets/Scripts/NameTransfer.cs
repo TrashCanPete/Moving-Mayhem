@@ -14,17 +14,19 @@ public class NameTransfer : MonoBehaviour
 
     private void Start()
     {
-        dontDestroy = FindObjectOfType<DontDestroyOnLoad>().GetComponent<DontDestroyOnLoad>();
+        if (FindObjectOfType<DontDestroyOnLoad>()!=null)
+            dontDestroy = FindObjectOfType<DontDestroyOnLoad>().GetComponent<DontDestroyOnLoad>();
     }
 
     public void storeName()
     {
         theName = inputField.GetComponent<Text>().text;
         textDisplay.GetComponent<Text>().text = "" + theName;
-
+        #if !UNITY_EDITOR
         Highscores.AddNewHighscore(theName, Score.points);
-
-        dontDestroy.setActiveCanvas = true;
+        #endif
+        if(dontDestroy!=null)
+            dontDestroy.setActiveCanvas = true;
         SceneManager.LoadScene(0);
     }
 }

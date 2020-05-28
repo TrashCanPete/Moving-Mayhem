@@ -65,7 +65,9 @@ public class Timer : MonoBehaviour
                 username += alphabet[UnityEngine.Random.Range(0, alphabet.Length)];
             }
             */
+#if !UNITY_EDITOR
         GameAnalytics.NewResourceEvent(GAResourceFlowType.Source, "Points", Score.points, "Mowed_Grass", "score_G");
+#endif
         //Reset to main menu scene
 
         SceneManager.LoadScene(3);

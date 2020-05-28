@@ -6,6 +6,7 @@ public class PaintTerrain : MonoBehaviour
 {
     [HideInInspector] public Terrain t;
     [HideInInspector] public GameObject currentTerrain;
+    public float scoreMultiplier = 1;
     [SerializeField] float paintingDist;
     public float size = 7;
     const float mapdiv = 1024;
@@ -13,6 +14,9 @@ public class PaintTerrain : MonoBehaviour
     float[,,] mainMap = new float[1, 1, 2];
     int width;
     int height;
+    Vector3 prevPos;
+    Vector3 distSinceUpdate;
+    float localScore = 0;
     //float[] textureValues = new float[2];
 
     private void Start()
@@ -36,6 +40,7 @@ public class PaintTerrain : MonoBehaviour
                         }
                     }
                     Paint(transform.position,mainMap);
+                    UpdateScore();
                 }
             }
             yield return new WaitForSeconds(1 /60);
@@ -80,24 +85,45 @@ public class PaintTerrain : MonoBehaviour
     
     void Paint(Vector3 position,float[,,] map)
     {
-        Vector3 checkingPos = GetPos(transform.position+transform.forward*1.5f);
+        Vector3 checkingPos = GetPos(transform.position+distSinceUpdate);
         bool[] paintAndScore =CheckTexture(checkingPos);
-        Vector3 pos = GetPos(position);
+        Vector3 offset = new Vector3(size / 2, 0, size / 2);
+        Vector3 pos = GetPos(position,offset);
         if(paintAndScore[1])
-            Score.points++;
+            localScore+= 1f*Vector3.Distance(transform.position,prevPos)*scoreMultiplier;
         if (paintAndScore[0])
             t.terrainData.SetAlphamaps((int)pos.x, (int)pos.z, map);
+        distSinceUpdate = (transform.position - prevPos).normalized;
+        Debug.DrawLine(transform.position, transform.position + distSinceUpdate,Color.red, 1f / 60f);
+        prevPos = transform.position;
     }
-    Vector3 GetPos(Vector3 position)
+    void UpdateScore()
     {
-        Vector3 plus = new Vector3(size/2, 0, size/2);
-        Vector3 pos = (position-plus) - t.GetPosition();
+        float dif = localScore - Score.points;
+        int add = (int)localScore;
+        localScore -= add;
+        Score.points += add;
+    }
+    Vector3 GetPos(Vector3 position,Vector3 offset)
+    {
+        Vector3 pos = (position-offset) - t.GetPosition();
         pos.x = pos.x / t.terrainData.size.x;
         pos.z = pos.z / t.terrainData.size.z;
         pos.x = pos.x * t.terrainData.alphamapWidth;
         pos.z = pos.z * t.terrainData.alphamapHeight;
         pos.x = Mathf.Clamp(pos.x, 0, t.terrainData.alphamapWidth-width);
         pos.z = Mathf.Clamp(pos.z, 0, t.terrainData.alphamapHeight-height);
+        return pos;
+    }
+    Vector3 GetPos(Vector3 position)
+    {
+        Vector3 pos = (position) - t.GetPosition();
+        pos.x = pos.x / t.terrainData.size.x;
+        pos.z = pos.z / t.terrainData.size.z;
+        pos.x = pos.x * t.terrainData.alphamapWidth;
+        pos.z = pos.z * t.terrainData.alphamapHeight;
+        pos.x = Mathf.Clamp(pos.x, 0, t.terrainData.alphamapWidth - width);
+        pos.z = Mathf.Clamp(pos.z, 0, t.terrainData.alphamapHeight - height);
         return pos;
     }
     bool[] CheckTexture(Vector3 position)

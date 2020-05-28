@@ -20,7 +20,8 @@ public class Highscores : MonoBehaviour
 
     private void Awake()
     {
-        if(instance != null && instance != this)
+
+        if (instance != null && instance != this)
         {
             Destroy(gameObject);
         }
@@ -89,7 +90,7 @@ public class Highscores : MonoBehaviour
     }
 }
 
-public struct Highscore 
+public struct Highscore
 {
     public string username;
     public int score;
