@@ -103,7 +103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6172330219693915791}
   m_Layer: 0
-  m_Name: (Small)StraghtRoadWithFootpath
+  m_Name: RD(Small)StraghtRoadWithFootpath
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
