@@ -32,6 +32,11 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene(_Level);
         
     }
+    public void LoadMainMenu()
+    {
+        dontDestroy.setActiveCanvas = true;
+        SceneManager.LoadScene(0);
+    }
     public void ExitScene()
     {
         Application.Quit();
