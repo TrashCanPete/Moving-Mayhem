@@ -17,19 +17,16 @@ public class Timer : MonoBehaviour
     [SerializeField]
     private float startTimerValue;
     public Score score;
+    public static Timer instance;
 
-
-
-    // Start is called before the first frame update
     void Start()
     {
-
+        instance = this;
         ResetTimer();
         pause = false;
         timerUI = GetComponent<Text>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         int timerInt = Convert.ToInt32(timer);

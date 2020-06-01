@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Driving))]
+[RequireComponent(typeof(Steering))]
 public class Animations : MonoBehaviour
 {
     public Animator anim;
     private Driving driving;
     private Steering steering;
-    public Timer timerScript;
 
     // Start is called before the first frame update
     void Start()
@@ -20,15 +21,15 @@ public class Animations : MonoBehaviour
     void Update()
     {
         if (steering.xAxis > 0)
-            {
-                anim.SetBool("Right Turn", true);
-                anim.SetBool("Left Turn", false);
-            }
+        {
+            anim.SetBool("Right Turn", true);
+            anim.SetBool("Left Turn", false);
+        }
         else if (steering.xAxis < 0)
-            {
-                anim.SetBool("Left Turn", true);
-                anim.SetBool("Right Turn", false);
-            }
+        {
+            anim.SetBool("Left Turn", true);
+            anim.SetBool("Right Turn", false);
+        }
         else
         {
             anim.SetBool("Left Turn", false);
@@ -62,10 +63,11 @@ public class Animations : MonoBehaviour
             anim.SetBool("Reversing", true);
         }
 
-        if (timerScript.timer <= 0)
-        {
-            anim.SetTrigger("Finish Game");
-        }
+        if (Timer.instance != null)
+            if (Timer.instance.timer <= 0)
+            {
+                anim.SetTrigger("Finish Game");
+            }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -80,5 +82,5 @@ public class Animations : MonoBehaviour
             anim.SetTrigger("Reverse Crashing");
         }
     }
-    
+
 }
