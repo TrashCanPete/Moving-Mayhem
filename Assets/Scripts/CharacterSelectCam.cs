@@ -14,27 +14,26 @@ public class CharacterSelectCam : MonoBehaviour
     private GameObject[] characters;
     [SerializeField]
     private int index;
+    [SerializeField]
+    private int count;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        index = 1;
+        index = 3;
     }
 
     // Update is called once per frame
     void Update()
     {
-
-
-
-        var _index = index;
-
+        count = index % characters.Length;
         while (index <= 0)
         {
             index += characters.Length;
         }
-        var choice = characters[index % characters.Length];
+
+        var choice = characters[count];
         var currentRotation = transform.rotation;
         var goalRotation = Quaternion.LookRotation(choice.transform.position - transform.position);
         transform.rotation = Quaternion.Lerp(currentRotation, goalRotation, 0.1f);
@@ -47,5 +46,20 @@ public class CharacterSelectCam : MonoBehaviour
         {
             index--;
         }
+        
+        switch (count)
+        {
+            case 2:
+                Debug.Log("count = "+ count);
+                break;
+            case 1:
+                Debug.Log("count = " + count);
+                break;
+            default:
+                Debug.Log("count = " + count);
+                break;
+
+        }
+        
     }
 }
