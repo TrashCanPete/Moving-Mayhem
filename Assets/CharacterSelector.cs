@@ -12,8 +12,11 @@ public class CharacterSelector : MonoBehaviour
     public float offset = 40;
     int selection = 0;
     Vector3 startPos;
-    int move = 0;
     int charCount = 0;
+    bool canMoveNext = true;
+    const float startCooldown = 0.2f;
+    const float movingCooldown = 0.08f;
+    float cooldown = startCooldown;
     private void Start()
     {
         startPos = transform.position;
@@ -29,25 +32,37 @@ public class CharacterSelector : MonoBehaviour
     private void Update()
     {
         float input = Input.GetAxisRaw("Horizontal");
-        if(input == 1&&move!=1)
+        if (canMoveNext)
         {
-            move = 1;
-            ChangeSelection(1);
-        }else if(input == -1&&move!=-1)
-        {
-            move = -1;
-            ChangeSelection(-1);
-        }else if (input == 0)
-        {
-            move = 0;
+            if (input == 1)
+            {
+                ChangeSelection(1);
+            }
+            else if (input == -1)
+            {
+                ChangeSelection(-1);
+            }
         }
-        if (Input.GetButtonDown("Handbrake"))
+        if (input < 0.5f&&input>-0.5f)
+        {
+            StopAllCoroutines();
+            cooldown = startCooldown;
+            canMoveNext = true;
+        }
+        if (Input.GetButtonDown("Handbrake")|| Input.GetButtonDown("Submit"))
         {
             AddLetter();
         }
     }
+    IEnumerator MoveNextCooldown()
+    {
+        canMoveNext = false;
+        yield return new WaitForSeconds(cooldown);
+        canMoveNext = true;
+    }
     void ChangeSelection(int increment)
     {
+
         selection += increment;
         if (selection < 0)
             selection = characters.Length-1;
@@ -55,6 +70,8 @@ public class CharacterSelector : MonoBehaviour
             selection = 0;
         Vector3 pos = startPos + new Vector3(-offset * selection, 0, 0);
         transform.position = pos;
+        StartCoroutine(MoveNextCooldown());
+        cooldown = movingCooldown;
     }
     void AddLetter()
     {
@@ -66,9 +83,6 @@ public class CharacterSelector : MonoBehaviour
     void Finish()
     {
         output.gameObject.GetComponent<Animator>().SetTrigger("Flash");
-        /*//#if !UNITY_EDITOR
-        Highscores.AddNewHighscore(output.text, Score.points);
-        //#endif*/
         this.enabled = false;
     }
 }
