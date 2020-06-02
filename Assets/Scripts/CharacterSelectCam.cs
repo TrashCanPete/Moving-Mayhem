@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CharacterSelectCam : MonoBehaviour
 {
+    public static int characterIndex = 0;
+    public int charInd;
     //vector3 values for each character rotation
     //rotate between each rotation
     //index = x;
@@ -21,12 +23,14 @@ public class CharacterSelectCam : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         index = 3;
     }
 
     // Update is called once per frame
     void Update()
     {
+        charInd = characterIndex;
         count = index % characters.Length;
         while (index <= 0)
         {
@@ -51,12 +55,15 @@ public class CharacterSelectCam : MonoBehaviour
         {
             case 2:
                 Debug.Log("count = "+ count);
+                characterIndex = 2;
                 break;
             case 1:
                 Debug.Log("count = " + count);
+                characterIndex = 1;
                 break;
             default:
                 Debug.Log("count = " + count);
+                characterIndex = 0;
                 break;
 
         }

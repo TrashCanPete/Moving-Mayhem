@@ -291,11 +291,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 627c57cf9ace553488e867ffca5af002, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  charInd: 0
   characters:
   - {fileID: 359135916}
   - {fileID: 896825112}
   - {fileID: 1495571795}
   index: 0
+  count: 0
 --- !u!1 &132595779
 GameObject:
   m_ObjectHideFlags: 0
@@ -2808,6 +2810,11 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: -1.033198
       objectReference: {fileID: 0}
+    - target: {fileID: 2845834930747593700, guid: 31d6a0d02a67e7b4bb94bac03279004a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 608649bc448ef2e408bc562c686584e0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31d6a0d02a67e7b4bb94bac03279004a, type: 3}
 --- !u!1001 &1809155087
@@ -3334,6 +3341,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2845834930747593700, guid: 31d6a0d02a67e7b4bb94bac03279004a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 280be347b9163c543aa3edbdcb862922, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31d6a0d02a67e7b4bb94bac03279004a, type: 3}
 --- !u!1 &8065459965132954087
