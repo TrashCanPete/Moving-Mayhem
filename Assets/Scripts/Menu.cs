@@ -12,7 +12,7 @@ public class Menu : MonoBehaviour
 
     private void Start()
     {
-        dontDestroy = FindObjectOfType<DontDestroyOnLoad>().GetComponent<DontDestroyOnLoad>();
+        //dontDestroy = FindObjectOfType<DontDestroyOnLoad>().GetComponent<DontDestroyOnLoad>();
         crunchCamera = GameObject.FindGameObjectWithTag("CrunchCamera");
         renderCanvas = GetComponent<Canvas>();
         StartCoroutine(SwitchScoresGroupOn());
@@ -28,13 +28,13 @@ public class Menu : MonoBehaviour
     }
     public void LoadScene(int _Level)
     {
-        dontDestroy.setActiveCanvas = false;
+        //dontDestroy.setActiveCanvas = false;
         SceneManager.LoadScene(_Level);
         
     }
     public void LoadMainMenu()
     {
-        dontDestroy.setActiveCanvas = true;
+        //dontDestroy.setActiveCanvas = true;
         SceneManager.LoadScene(0);
     }
     public void ExitScene()

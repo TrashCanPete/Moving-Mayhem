@@ -7,7 +7,8 @@ public enum LoadTrigger
 {
     none,
     start,
-    buttonPress
+    buttonPress,
+    anyKey
 }
 public enum LoadDestination
 {
@@ -67,6 +68,11 @@ public class LoadLevel : MonoBehaviour
         if (trigger == LoadTrigger.buttonPress)
         {
             if (Input.GetButtonDown(button))
+                Activate();
+        }
+        else if(trigger == LoadTrigger.anyKey)
+        {
+            if (Input.anyKey)
                 Activate();
         }
     }

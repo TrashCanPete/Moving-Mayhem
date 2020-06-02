@@ -21,15 +21,16 @@ public class Highscores : MonoBehaviour
     private void Awake()
     {
 
-        if (instance != null && instance != this)
+        /*if (instance != null && instance != this)
         {
             Destroy(gameObject);
         }
         else
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
+           // DontDestroyOnLoad(gameObject);
+        }*/
+        instance = this;
         highscoresDisplay = GetComponent<DisplayHighscores>();
     }
     public static void AddNewHighscore(string username, int score)
