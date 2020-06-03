@@ -18,6 +18,13 @@ public class Timer : MonoBehaviour
     private float startTimerValue;
     public Score score;
 
+    int timesadded = 1;
+    int targetPoints = 50;
+    public int pointsToGetMoreTime;
+
+
+
+
     void Start()
     {
         ResetTimer();
@@ -27,6 +34,12 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
+        pointsToGetMoreTime = timesadded * targetPoints;
+        if(Score.Points > timesadded * targetPoints)
+        {
+            timesadded++;
+            timer++;
+        }
         int timerInt = Convert.ToInt32(timer);
         timerUI.text = "" + timerInt;
         if (timer < 5)

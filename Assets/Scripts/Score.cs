@@ -8,6 +8,7 @@ public class Score : MonoBehaviour
 {
     static bool scoring = false;
     static int points;
+    static int pointTracker;
     float vel = 0;
     public static int Points
     {
