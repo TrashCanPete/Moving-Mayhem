@@ -5,9 +5,9 @@ using UnityEngine;
 public class Destruction : MonoBehaviour
 {
     public GameObject piece1;
-    public GameObject piece2;
-
+    public bool destroyObject = false;
     private Vector3 playerPos;
+    public bool Colliding = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,10 +22,22 @@ public class Destruction : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Debug.Log("Player colliding");
-            Instantiate(piece1, playerPos , transform.rotation);
-            Instantiate(piece2, playerPos , transform.rotation);
-            Invoke("destroy", 0.05f);
+            Instantiate(piece1, transform.position, transform.rotation);
+            if (destroyObject == true)
+            {
+                Invoke("destroy", 0.05f);
+            }
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Instantiate(piece1, transform.position, transform.rotation);
+            if (destroyObject == true)
+            {
+                Invoke("destroy", 0.05f);
+            }
         }
     }
     void destroy()

@@ -283,7 +283,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piece1: {fileID: 7728692043899003041, guid: 77b4f3434e094a54fa97d577ccdccbf6, type: 3}
-  piece2: {fileID: 319867225676343190, guid: 0c662a59be042154e889af85f34d539f, type: 3}
+  destroyObject: 1
+  Colliding: 0
 --- !u!65 &2473943619367035866
 BoxCollider:
   m_ObjectHideFlags: 0
