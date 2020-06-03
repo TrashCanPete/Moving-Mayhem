@@ -32,6 +32,29 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene(_Level);
         
     }
+    public void SelectCharacter()
+    {
+        if(CharacterSelectCam.characterIndex == 0)
+        {
+            //default
+            Debug.Log("Default");
+        }
+        if (CharacterSelectCam.characterIndex == 1)
+        {
+            //punk
+            Debug.Log("Punk");
+        }
+        if (CharacterSelectCam.characterIndex == 2)
+        {
+            //other
+            Debug.Log("Other");
+        }
+        Invoke("changeGameScene", 2);
+    }
+    public void changeGameScene()
+    {
+        SceneManager.LoadScene(2);
+    }
     public void LoadMainMenu()
     {
         //dontDestroy.setActiveCanvas = true;

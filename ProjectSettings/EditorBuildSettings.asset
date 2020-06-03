@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Josh's Scene.unity
     guid: 430d84e3c0d48e342863bc58416dde08
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Lawrence's Josh's scene.unity
     guid: 69f1e567d12825b4e88625fc4b217d6d
   - enabled: 0

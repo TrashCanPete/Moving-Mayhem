@@ -383,6 +383,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1019035004}
     m_Modifications:
+    - target: {fileID: 8679361062049581374, guid: 705da07ad6acaf1478a78188e6c51b19,
+        type: 3}
+      propertyPath: m_Name
+      value: FenceWhite (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 5631770294080535341, guid: 705da07ad6acaf1478a78188e6c51b19,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -437,11 +442,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679361062049581374, guid: 705da07ad6acaf1478a78188e6c51b19,
-        type: 3}
-      propertyPath: m_Name
-      value: FenceWhite (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 705da07ad6acaf1478a78188e6c51b19, type: 3}
@@ -669,6 +669,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1019035004}
     m_Modifications:
+    - target: {fileID: 8679361062049581374, guid: 705da07ad6acaf1478a78188e6c51b19,
+        type: 3}
+      propertyPath: m_Name
+      value: FenceWhite (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 5631770294080535341, guid: 705da07ad6acaf1478a78188e6c51b19,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -724,11 +729,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8679361062049581374, guid: 705da07ad6acaf1478a78188e6c51b19,
-        type: 3}
-      propertyPath: m_Name
-      value: FenceWhite (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 705da07ad6acaf1478a78188e6c51b19, type: 3}
 --- !u!1001 &527427656
@@ -738,6 +738,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1019035004}
     m_Modifications:
+    - target: {fileID: 8679361062049581374, guid: 705da07ad6acaf1478a78188e6c51b19,
+        type: 3}
+      propertyPath: m_Name
+      value: FenceWhite (11)
+      objectReference: {fileID: 0}
     - target: {fileID: 5631770294080535341, guid: 705da07ad6acaf1478a78188e6c51b19,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -792,11 +797,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679361062049581374, guid: 705da07ad6acaf1478a78188e6c51b19,
-        type: 3}
-      propertyPath: m_Name
-      value: FenceWhite (11)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 705da07ad6acaf1478a78188e6c51b19, type: 3}
@@ -1157,6 +1157,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1019035004}
     m_Modifications:
+    - target: {fileID: 8679361062049581374, guid: 705da07ad6acaf1478a78188e6c51b19,
+        type: 3}
+      propertyPath: m_Name
+      value: FenceWhite (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 5631770294080535341, guid: 705da07ad6acaf1478a78188e6c51b19,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1211,11 +1216,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679361062049581374, guid: 705da07ad6acaf1478a78188e6c51b19,
-        type: 3}
-      propertyPath: m_Name
-      value: FenceWhite (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 705da07ad6acaf1478a78188e6c51b19, type: 3}
@@ -1325,8 +1325,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 949331950}
-        m_MethodName: LoadScene
-        m_Mode: 3
+        m_MethodName: SelectCharacter
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1676,6 +1676,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1019035004}
     m_Modifications:
+    - target: {fileID: 8679361062049581374, guid: 705da07ad6acaf1478a78188e6c51b19,
+        type: 3}
+      propertyPath: m_Name
+      value: FenceWhite (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 5631770294080535341, guid: 705da07ad6acaf1478a78188e6c51b19,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1731,11 +1736,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8679361062049581374, guid: 705da07ad6acaf1478a78188e6c51b19,
-        type: 3}
-      propertyPath: m_Name
-      value: FenceWhite (6)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 705da07ad6acaf1478a78188e6c51b19, type: 3}
 --- !u!1001 &1186692562
@@ -1745,6 +1745,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1019035004}
     m_Modifications:
+    - target: {fileID: 8679361062049581374, guid: 705da07ad6acaf1478a78188e6c51b19,
+        type: 3}
+      propertyPath: m_Name
+      value: FenceWhite (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 5631770294080535341, guid: 705da07ad6acaf1478a78188e6c51b19,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1799,11 +1804,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679361062049581374, guid: 705da07ad6acaf1478a78188e6c51b19,
-        type: 3}
-      propertyPath: m_Name
-      value: FenceWhite (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 705da07ad6acaf1478a78188e6c51b19, type: 3}
@@ -1907,6 +1907,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1019035004}
     m_Modifications:
+    - target: {fileID: 8679361062049581374, guid: 705da07ad6acaf1478a78188e6c51b19,
+        type: 3}
+      propertyPath: m_Name
+      value: FenceWhite (10)
+      objectReference: {fileID: 0}
     - target: {fileID: 5631770294080535341, guid: 705da07ad6acaf1478a78188e6c51b19,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1961,11 +1966,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679361062049581374, guid: 705da07ad6acaf1478a78188e6c51b19,
-        type: 3}
-      propertyPath: m_Name
-      value: FenceWhite (10)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 705da07ad6acaf1478a78188e6c51b19, type: 3}
@@ -2503,6 +2503,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1019035004}
     m_Modifications:
+    - target: {fileID: 8679361062049581374, guid: 705da07ad6acaf1478a78188e6c51b19,
+        type: 3}
+      propertyPath: m_Name
+      value: FenceWhite
+      objectReference: {fileID: 0}
     - target: {fileID: 5631770294080535341, guid: 705da07ad6acaf1478a78188e6c51b19,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2558,11 +2563,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8679361062049581374, guid: 705da07ad6acaf1478a78188e6c51b19,
-        type: 3}
-      propertyPath: m_Name
-      value: FenceWhite
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 705da07ad6acaf1478a78188e6c51b19, type: 3}
 --- !u!1001 &1724815464
@@ -2572,6 +2572,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1019035004}
     m_Modifications:
+    - target: {fileID: 8679361062049581374, guid: 705da07ad6acaf1478a78188e6c51b19,
+        type: 3}
+      propertyPath: m_Name
+      value: FenceWhite (9)
+      objectReference: {fileID: 0}
     - target: {fileID: 5631770294080535341, guid: 705da07ad6acaf1478a78188e6c51b19,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2627,11 +2632,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8679361062049581374, guid: 705da07ad6acaf1478a78188e6c51b19,
-        type: 3}
-      propertyPath: m_Name
-      value: FenceWhite (9)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 705da07ad6acaf1478a78188e6c51b19, type: 3}
 --- !u!1001 &1740498548
@@ -2641,6 +2641,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1019035004}
     m_Modifications:
+    - target: {fileID: 8679361062049581374, guid: 705da07ad6acaf1478a78188e6c51b19,
+        type: 3}
+      propertyPath: m_Name
+      value: FenceWhite (7)
+      objectReference: {fileID: 0}
     - target: {fileID: 5631770294080535341, guid: 705da07ad6acaf1478a78188e6c51b19,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2695,11 +2700,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679361062049581374, guid: 705da07ad6acaf1478a78188e6c51b19,
-        type: 3}
-      propertyPath: m_Name
-      value: FenceWhite (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 705da07ad6acaf1478a78188e6c51b19, type: 3}
@@ -2824,6 +2824,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1019035004}
     m_Modifications:
+    - target: {fileID: 8679361062049581374, guid: 705da07ad6acaf1478a78188e6c51b19,
+        type: 3}
+      propertyPath: m_Name
+      value: FenceWhite (8)
+      objectReference: {fileID: 0}
     - target: {fileID: 5631770294080535341, guid: 705da07ad6acaf1478a78188e6c51b19,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2878,11 +2883,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679361062049581374, guid: 705da07ad6acaf1478a78188e6c51b19,
-        type: 3}
-      propertyPath: m_Name
-      value: FenceWhite (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 705da07ad6acaf1478a78188e6c51b19, type: 3}
@@ -2966,6 +2966,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1019035004}
     m_Modifications:
+    - target: {fileID: 8679361062049581374, guid: 705da07ad6acaf1478a78188e6c51b19,
+        type: 3}
+      propertyPath: m_Name
+      value: FenceWhite (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 5631770294080535341, guid: 705da07ad6acaf1478a78188e6c51b19,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3020,11 +3025,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679361062049581374, guid: 705da07ad6acaf1478a78188e6c51b19,
-        type: 3}
-      propertyPath: m_Name
-      value: FenceWhite (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 705da07ad6acaf1478a78188e6c51b19, type: 3}
