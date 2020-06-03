@@ -99,10 +99,10 @@ public class PaintTerrain : MonoBehaviour
     }
     void UpdateScore()
     {
-        float dif = localScore - Score.points;
+        float dif = localScore - Score.Points;
         int add = (int)localScore;
         localScore -= add;
-        Score.points += add;
+        Score.Points += add;
     }
     Vector3 GetPos(Vector3 position,Vector3 offset)
     {

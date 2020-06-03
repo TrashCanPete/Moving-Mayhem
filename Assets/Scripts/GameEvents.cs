@@ -28,9 +28,11 @@ public class GameEvents : MonoBehaviour
         {
             instance = this;
         }
+        if (LevelLoaded.GetPersistentEventCount() > 0)
+            LevelLoaded.Invoke();
     }
-
     public UnityEvent LevelLoaded;
+    public UnityEvent StartCountdown;
     public UnityEvent GameStart;
     public UnityEvent GameEnd;
 }

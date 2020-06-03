@@ -23,7 +23,7 @@ public class NameTransfer : MonoBehaviour
         theName = inputField.GetComponent<Text>().text;
         textDisplay.GetComponent<Text>().text = "" + theName;
         #if !UNITY_EDITOR
-        Highscores.AddNewHighscore(theName, Score.points);
+        Highscores.AddNewHighscore(theName, Score.Points);
         #endif
         if(dontDestroy!=null)
             dontDestroy.setActiveCanvas = true;

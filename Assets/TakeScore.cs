@@ -7,6 +7,6 @@ public class TakeScore : MonoBehaviour
     public TextMeshProUGUI text;
     public void SendScore()
     {
-        Highscores.AddNewHighscore(text.text, Score.points);
+        Highscores.AddNewHighscore(text.text, Score.Points);
     }
 }

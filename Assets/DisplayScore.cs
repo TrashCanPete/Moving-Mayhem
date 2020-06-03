@@ -9,6 +9,6 @@ public class DisplayScore : MonoBehaviour
     private void Start()
     {
         text = GetComponent<TextMeshProUGUI>();
-        text.text += " "+ Score.points;
+        text.text += " "+ Score.Points;
     }
 }

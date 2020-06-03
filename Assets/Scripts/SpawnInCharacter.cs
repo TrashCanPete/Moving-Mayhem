@@ -9,26 +9,23 @@ public class SpawnInCharacter : MonoBehaviour
     public GameObject player1;
     public GameObject player2;
     public GameObject player3;
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         switch (CharacterSelectCam.characterIndex)
         {
             case 2:
-                Instantiate(player1, playerStart);
+                Spawn(player1);
                 break;
             case 1:
-                Instantiate(player2, playerStart);
+                Spawn(player2);
                 break;
             default:
-                Instantiate(player1, playerStart);
+                Spawn(player1);
                 break;
         }
     }
-
-    // Update is called once per frame
-    void Update()
+    void Spawn(GameObject player)
     {
-        
+        Instantiate(player, playerStart.position, playerStart.rotation);
     }
 }

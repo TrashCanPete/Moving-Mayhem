@@ -62,9 +62,7 @@ public class Animations : MonoBehaviour
         {
             anim.SetBool("Reversing", true);
         }
-
-        if (Timer.instance != null)
-            if (Timer.instance.timer <= 0)
+            if (Timer.timer <= 0)
             {
                 anim.SetTrigger("Finish Game");
             }

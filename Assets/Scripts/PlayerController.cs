@@ -1,18 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+[RequireComponent(typeof(Driving))]
+[RequireComponent(typeof(Steering))]
+[RequireComponent(typeof(Rigidbody))]
 public class PlayerController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    Driving driving;
+    Steering steering;
+    Rigidbody rb;
+    private void Awake()
     {
-        
+        driving = GetComponent<Driving>();
+        steering = GetComponent<Steering>();
+        rb = GetComponent<Rigidbody>();
+        ActivatePlayer.playerRB = rb;
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (Timer.timer < 0)
+            Disable();
+    }
+    public void Disable()
+    {
+        driving.enabled = false;
+        steering.enabled = false;
+        rb.drag = 4;
     }
 }

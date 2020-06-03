@@ -44,7 +44,7 @@ public class CheckTerrainTexture : MonoBehaviour
             Debug.Log("Mowing Grass");
             Mowing.SetActive(true);
             notMowing.SetActive(false);
-            Score.points += 1;
+            Score.Points += 1;
         }
         else if(textureValues[0] == 1)
         {

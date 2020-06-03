@@ -7,38 +7,41 @@ using UnityEngine.SceneManagement;
 using GameAnalyticsSDK;
 using GameAnalyticsSDK.Setup;
 using GameAnalyticsSDK.Events;
-
+using TMPro;
 public class Timer : MonoBehaviour
 {
-    private Text timerUI;
+    private TextMeshProUGUI timerUI;
     [SerializeField]
-    public float timer;
+    public static float timer;
     public bool pause;
     [SerializeField]
     private float startTimerValue;
     public Score score;
-    public static Timer instance;
 
     void Start()
     {
-        instance = this;
         ResetTimer();
-        pause = false;
-        timerUI = GetComponent<Text>();
+        timerUI = GetComponent<TextMeshProUGUI>();
+        timerUI.text = startTimerValue.ToString();
     }
 
     void Update()
     {
         int timerInt = Convert.ToInt32(timer);
         timerUI.text = "" + timerInt;
-
+        if (timer < 5)
+        {
+            TimeSpan time =TimeSpan.FromSeconds(timer);
+            timerUI.text = time.ToString(@"s\.f");
+        }
         if(pause == false)
         {
             TimerCountDown();
         }
         if(timer <= 0)
         {
-            
+            timerUI.text = "Time's Up!";
+            pause = true;
             Invoke("TimesUp", 5);
         }
     }
@@ -53,20 +56,13 @@ public class Timer : MonoBehaviour
 
     void TimesUp()
     {
-        /*//name generator
-             * string username = "";
-            string alphabet = "abcdefghijklmnopqrstuvwxyz";
-
-            for (int i = 0; i < 3; i++)
-            {
-                username += alphabet[UnityEngine.Random.Range(0, alphabet.Length)];
-            }
-            */
 #if !UNITY_EDITOR
-        GameAnalytics.NewResourceEvent(GAResourceFlowType.Source, "Points", Score.points, "Mowed_Grass", "score_G");
+        GameAnalytics.NewResourceEvent(GAResourceFlowType.Source, "Points", Score.Points, "Mowed_Grass", "score_G");
 #endif
-        //Reset to main menu scene
-
         SceneManager.LoadScene(3);
+    }
+    public void SetPauseState(bool isPaused)
+    {
+        pause = isPaused;
     }
 }
