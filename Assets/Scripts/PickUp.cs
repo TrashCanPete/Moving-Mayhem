@@ -49,7 +49,7 @@ public class PickUp : MonoBehaviour
             {
                 case TypesOfPickUps.Timer:
                     Debug.Log("Added time");
-                    timer.timer += addedTime;
+                    Timer.timer += addedTime;
                     break;
                 case TypesOfPickUps.Multiplyer:
                     Debug.Log("Added multiplyer");

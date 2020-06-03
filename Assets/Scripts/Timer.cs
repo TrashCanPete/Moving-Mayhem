@@ -59,7 +59,7 @@ public class Timer : MonoBehaviour
 #if !UNITY_EDITOR
         GameAnalytics.NewResourceEvent(GAResourceFlowType.Source, "Points", Score.Points, "Mowed_Grass", "score_G");
 #endif
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
     }
     public void SetPauseState(bool isPaused)
     {
