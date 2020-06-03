@@ -18,7 +18,7 @@ public class GameEvents : MonoBehaviour
         }
     }
 
-    private void Awake()
+    private void Start()
     {
         if (instance != null && instance != this)
         {

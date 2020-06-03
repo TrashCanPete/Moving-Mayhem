@@ -332,6 +332,7 @@ GameObject:
   - component: {fileID: 2478265560390288264}
   - component: {fileID: 2478265560390288282}
   - component: {fileID: 2478265560390288283}
+  - component: {fileID: 1556500087422411155}
   m_Layer: 9
   m_Name: CarBody
   m_TagString: Untagged
@@ -596,6 +597,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 3048124068526357788}
+--- !u!114 &1556500087422411155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2478265560390288284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6bdef886950374f8bfbf8c13754d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: 1
+  min: 0.5
+  max: 20
+  clips:
+  - {fileID: 8300000, guid: f4aa9f276c86858459cccdc651a019d5, type: 3}
+  - {fileID: 8300000, guid: bd9fa97156ae6ba4196c9a8c9f3c2dc9, type: 3}
+  - {fileID: 8300000, guid: 21ca37b2a4ba646409fb68f61ed13381, type: 3}
+  - {fileID: 8300000, guid: 3692b22951a63aa489a1ea9dea356a33, type: 3}
 --- !u!1 &2478265560577912993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1171,7 +1192,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   sourceContainer: {fileID: 2478265561785565910}
-  engineVolume: 0.25
+  engineVolume: 0.5
   revCounter: {fileID: 2478265561785565915}
   rpm: 0
   max: 6000

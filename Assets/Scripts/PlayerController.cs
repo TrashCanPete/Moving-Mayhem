@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
         steering = GetComponent<Steering>();
         rb = GetComponent<Rigidbody>();
         ActivatePlayer.playerRB = rb;
+        Speedo.rb = rb;
     }
     private void Update()
     {
@@ -24,7 +25,7 @@ public class PlayerController : MonoBehaviour
     public void Disable()
     {
         driving.enabled = false;
-        steering.enabled = false;
+        steering.recieveInput = false;
         rb.drag = 4;
     }
 }

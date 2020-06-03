@@ -20,6 +20,7 @@ public class Steering : MonoBehaviour
     [SerializeField] float steeringPower = 5000;
 
     public Animator anim;
+    public bool recieveInput = true;
 
 #pragma warning restore 0649
     [HideInInspector] public float xAxis;
@@ -84,6 +85,8 @@ public class Steering : MonoBehaviour
     {
         xAxis = Input.GetAxis("Horizontal");
         xAxis = xAxis * (1+driftingAssist.Evaluate(driving.DriftFactor));
+        if (!recieveInput)
+            xAxis = 0;
     }
     private void FixedUpdate()
     {
