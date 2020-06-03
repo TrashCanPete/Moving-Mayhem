@@ -6,7 +6,6 @@ public class PickUp : MonoBehaviour
 {
     public enum TypesOfPickUps {Timer, Multiplyer }
     public TypesOfPickUps pickUpType;
-    public Timer timer;
     [SerializeField]
     private int addedTime;
 
@@ -26,7 +25,6 @@ public class PickUp : MonoBehaviour
     void Start()
     {
         posOffset = transform.position;
-        timer = FindObjectOfType<Timer>();
     }
 
     // Update is called once per frame

@@ -282,7 +282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 596e359b3f79dc04eaa4e813a5b8ea7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  piece1: {fileID: 7728692043899003041, guid: 77b4f3434e094a54fa97d577ccdccbf6, type: 3}
+  piece1: {fileID: 5226509426255052848, guid: 98e5802ce3cda3047a185d553efbb80f, type: 3}
   destroyObject: 1
   Colliding: 0
 --- !u!65 &2473943619367035866
