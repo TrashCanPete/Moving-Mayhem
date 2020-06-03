@@ -470,6 +470,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   steeringPower: 5000
   anim: {fileID: 3048124068526357788}
+  recieveInput: 1
   xAxis: 0
 --- !u!54 &2478265560390288258
 Rigidbody:
@@ -909,7 +910,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2478265561107497399}
   m_Layer: 0
-  m_Name: Woody_Player 1
+  m_Name: Woody_Player varient 2
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
