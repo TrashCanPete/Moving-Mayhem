@@ -435,7 +435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 612199a415c72714e84048fe1d0eaea6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turningRadius: 5
+  turningRadius: 3.5
   driftingAssist:
     serializedVersion: 2
     m_Curve:
@@ -469,7 +469,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  steeringPower: 5000
+  steeringPower: 50000
   anim: {fileID: 3048124068526357788}
   recieveInput: 1
   xAxis: 0
