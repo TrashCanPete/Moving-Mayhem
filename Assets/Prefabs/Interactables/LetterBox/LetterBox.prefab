@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3532691506237606904}
   - component: {fileID: 1466181713619414108}
   m_Layer: 0
-  m_Name: pCube18
+  m_Name: Letterbox_roof2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 1099670577179226844}
   - component: {fileID: 6730807793574054014}
   m_Layer: 0
-  m_Name: pCube16
+  m_Name: Letterbox_Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -168,7 +168,7 @@ GameObject:
   - component: {fileID: 1347015914194874351}
   - component: {fileID: 1701767931311210931}
   m_Layer: 0
-  m_Name: pCube17
+  m_Name: Letterbox_Roof1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -310,7 +310,7 @@ GameObject:
   - component: {fileID: 2451967996267663380}
   - component: {fileID: 8185016457597098628}
   m_Layer: 0
-  m_Name: pCube15
+  m_Name: Letterbox_Pole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
