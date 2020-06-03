@@ -5,31 +5,63 @@ using UnityEngine.UI;
 using TMPro;
 public class DisplayHighscores : MonoBehaviour
 {
-    public TMP_Text[] highscoreTexts;
+    //public TMP_Text[] ScoreRanksColumns;
+    public TMP_Text[] ScoreValueColumn;
+    public TMP_Text[] ScoreNameColumn;
+
     Highscores highscoreManager;
     [SerializeField]
     private string columnSpace = "            ";
 
     void Start()
     {
-        for (int i = 0; i < highscoreTexts.Length; i ++)
+        /*for (int i = 0; i < ScoreRanksColumns.Length; i ++)
         {
-            highscoreTexts[i].text = i + 1 + ". Fetching...";
+            ScoreRanksColumns[i].text = i + 1 + ". Fetching...";
+        }*/
+        for (int i = 0; i < ScoreNameColumn.Length; i++)
+        {
+            ScoreNameColumn[i].text = ". Fetching...";
         }
+        for (int i = 0; i < ScoreValueColumn.Length; i++)
+        {
+            ScoreValueColumn[i].text =  ". Fetching...";
+        }
+
         highscoreManager = GetComponent<Highscores>();
         StartCoroutine(RefreshHighscores());
     }
 
     public void OnHighscoresDownloaded(Highscore[] highscoreList)
     {
-        for (int i = 0; i < highscoreTexts.Length; i++)
+        /*for (int i = 0; i < ScoreRanksColumns.Length; i++)
         {
-            highscoreTexts[i].text = i + 1 + "";
+            ScoreRanksColumns[i].text = i + 1 + "";
             if(highscoreList.Length > i)
             {
-                highscoreTexts[i].text += columnSpace + highscoreList[i].username + columnSpace + highscoreList[i].score;
+                ScoreRanksColumns[i].text += columnSpace + highscoreList[i].username + columnSpace + highscoreList[i].score;
+
+            }
+        }*/
+        for (int i = 0; i < ScoreNameColumn.Length; i++)
+        {
+            ScoreNameColumn[i].text =  "";
+            if (highscoreList.Length > i)
+            {
+                ScoreNameColumn[i].text += highscoreList[i].username;
+
             }
         }
+        for (int i = 0; i < ScoreValueColumn.Length; i++)
+        {
+            ScoreValueColumn[i].text =  "";
+            if (highscoreList.Length > i)
+            {
+                ScoreValueColumn[i].text += highscoreList[i].score;
+
+            }
+        }
+
     }
     IEnumerator RefreshHighscores()
     {
