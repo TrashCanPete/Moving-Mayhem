@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -877,7 +877,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -192}
-  m_SizeDelta: {x: 192.44, y: 28}
+  m_SizeDelta: {x: 400, y: 28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &926124162
 MonoBehaviour:
@@ -897,7 +897,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Your Score:'
+  m_text: 'YOUR SCORE: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c6e62ff4b14071746949150b465cf679, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: a62e8c21c65fa6b4ba5aa2524e22ebc8, type: 2}
@@ -932,7 +932,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 257
+  m_textAlignment: 258
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -966,9 +966,9 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 926124162}
-    characterCount: 11
+    characterCount: 12
     spriteCount: 0
-    spaceCount: 1
+    spaceCount: 2
     wordCount: 2
     linkCount: 0
     lineCount: 1
@@ -1523,7 +1523,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Name Entry
+  m_text: NAME ENRTY
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c6e62ff4b14071746949150b465cf679, type: 2}
   m_sharedMaterial: {fileID: -7182976860880690176, guid: c6e62ff4b14071746949150b465cf679,

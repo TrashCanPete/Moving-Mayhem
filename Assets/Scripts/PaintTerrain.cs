@@ -17,6 +17,7 @@ public class PaintTerrain : MonoBehaviour
     Vector3 prevPos;
     Vector3 distSinceUpdate;
     float localScore = 0;
+    public bool isPainting = false;
     //float[] textureValues = new float[2];
 
     private void Start()
@@ -27,6 +28,7 @@ public class PaintTerrain : MonoBehaviour
     {
         while (enabled)
         {
+            isPainting = false;
             RaycastHit hit;
             if (Physics.Raycast(transform.position, -transform.up, out hit, paintingDist))
             {
@@ -39,11 +41,12 @@ public class PaintTerrain : MonoBehaviour
                            GetTerrain(hit.transform.gameObject);
                         }
                     }
+                    
                     Paint(transform.position,mainMap);
                     UpdateScore();
                 }
             }
-            yield return new WaitForSeconds(1 /60);
+            yield return new WaitForSeconds(1 /60); 
         }
     }
     private void OnValidate()
@@ -89,8 +92,11 @@ public class PaintTerrain : MonoBehaviour
         bool[] paintAndScore =CheckTexture(checkingPos);
         Vector3 offset = new Vector3(size / 2, 0, size / 2);
         Vector3 pos = GetPos(position,offset);
-        if(paintAndScore[1])
-            localScore+= 1f*Vector3.Distance(transform.position,prevPos)*scoreMultiplier;
+        if (paintAndScore[1])
+        {
+            localScore += 1f * Vector3.Distance(transform.position, prevPos) * scoreMultiplier;
+            isPainting = true;
+        }  
         if (paintAndScore[0])
             t.terrainData.SetAlphamaps((int)pos.x, (int)pos.z, map);
         distSinceUpdate = (transform.position - prevPos).normalized;

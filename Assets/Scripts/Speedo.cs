@@ -19,7 +19,8 @@ public class Speedo : MonoBehaviour
         float speed = 0;
         if (rb != null)
             speed = rb.velocity.magnitude * 3.6f;
-        float angle = Mathf.Lerp(startRotation, endRotation, speed/topSpeed);
-        transform.rotation = Quaternion.Euler(0, 0, angle);
+        float angle = Mathf.Lerp(startRotation, endRotation, speed / topSpeed);
+        Vector3 euler = transform.rotation.eulerAngles;
+        transform.rotation = Quaternion.Euler(euler.x, euler.y, angle);
     }
 }
