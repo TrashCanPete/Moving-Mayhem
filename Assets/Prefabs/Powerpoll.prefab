@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2307075608494153425}
+  - component: {fileID: 7036259619862761243}
   m_Layer: 0
   m_Name: Powerpoll
   m_TagString: Untagged
@@ -148,7 +149,7 @@ Transform:
   m_GameObject: {fileID: 1612069666448338114}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 62.61761, y: -0.132, z: 67.356}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3016948, y: 1.3016948, z: 1.3016948}
   m_Children:
   - {fileID: 3725577037082356466}
   - {fileID: 704041352315909485}
@@ -166,6 +167,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7036259619862761243
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612069666448338114}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 5.3780875, z: 0.5}
+  m_Center: {x: 0, y: -2.1890438, z: 0}
 --- !u!1 &1934601437964663956
 GameObject:
   m_ObjectHideFlags: 0
