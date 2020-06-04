@@ -70,7 +70,7 @@ public class Timer : MonoBehaviour
     void TimesUp()
     {
 #if !UNITY_EDITOR
-        GameAnalytics.NewResourceEvent(GAResourceFlowType.Source, "Points", Score.Points, "Mowed_Grass", "score_G", "Selected_Character", "characterIndex");
+        GameAnalytics.NewResourceEvent(GAResourceFlowType.Source, "Points", Score.Points, "Mowed_Grass", "score_G");
 #endif
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
     }
