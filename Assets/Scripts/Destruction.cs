@@ -33,6 +33,7 @@ public class Destruction : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            Debug.Log("Collide!!!");
             Instantiate(piece1, transform.position, transform.rotation);
             if (destroyObject == true)
             {

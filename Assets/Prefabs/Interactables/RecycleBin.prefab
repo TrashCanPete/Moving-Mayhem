@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2307169419824516244}
   - component: {fileID: 5034951821095991487}
   - component: {fileID: 1079182720051810353}
+  - component: {fileID: 5825902398800899477}
   m_Layer: 0
   m_Name: RecycleBin
   m_TagString: Untagged
@@ -25,8 +26,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1612270550004940423}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.055748, y: 0.12, z: -134.86}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5112147609004811243}
@@ -45,7 +46,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.6045602, y: 0.51354194, z: 0.5766907}
-  m_Center: {x: 0.062266618, y: 0.27594376, z: -12.322784}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1079182720051810353
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -62,6 +63,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5825902398800899477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612270550004940423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 596e359b3f79dc04eaa4e813a5b8ea7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  piece1: {fileID: 6707372256280258885, guid: 555619b7dffc4f942a89e8f25d3a58f2, type: 3}
+  destroyObject: 0
+  Colliding: 1
 --- !u!1 &2924718426364771671
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,7 +104,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2924718426364771671}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.061157316, y: 0.2622164, z: -12.318939}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.41640583, y: 0.47810784, z: 0.47810784}
   m_Children: []
   m_Father: {fileID: 2307169419824516244}
