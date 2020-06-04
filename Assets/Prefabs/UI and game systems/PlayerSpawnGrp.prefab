@@ -45,9 +45,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerStart: {fileID: 7726408417045806705}
   playertransformPosition: {x: 0, y: 0, z: 0}
-  player1: {fileID: 2478265561107497392, guid: 654393c86c7eae94b90f4c080ae94c01, type: 3}
+  player1: {fileID: 2478265561107497392, guid: 8b58113b6b8be264b923864de9e35223, type: 3}
   player2: {fileID: 2478265561107497392, guid: a7f58a8f7b80b764792f99b235983b7d, type: 3}
-  player3: {fileID: 2478265561107497392, guid: 654393c86c7eae94b90f4c080ae94c01, type: 3}
+  player3: {fileID: 2478265561107497392, guid: 8b58113b6b8be264b923864de9e35223, type: 3}
 --- !u!1 &7726408417033562071
 GameObject:
   m_ObjectHideFlags: 0
@@ -73,7 +73,7 @@ Transform:
   m_GameObject: {fileID: 7726408417033562071}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 29.92, y: 2.9, z: 229.66}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children:
   - {fileID: 7726408417045806705}
   - {fileID: 7726408416254968898}

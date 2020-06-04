@@ -392,6 +392,11 @@ PrefabInstance:
       propertyPath: score
       value: 
       objectReference: {fileID: 6870798604600532908}
+    - target: {fileID: 6583305796586166665, guid: e1666dc9baf0f6148b01f0fa92f75119,
+        type: 3}
+      propertyPath: pointsToGetMoreTime
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1666dc9baf0f6148b01f0fa92f75119, type: 3}
 --- !u!224 &6870798604895118927 stripped
@@ -516,6 +521,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 175080385314819198, guid: dbcdf8172eca75445b25c47ce3f44622,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbcdf8172eca75445b25c47ce3f44622, type: 3}
