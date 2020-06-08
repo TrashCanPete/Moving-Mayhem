@@ -8,6 +8,7 @@ public class PickUp : MonoBehaviour
     public TypesOfPickUps pickUpType;
     [SerializeField]
     private int addedTime;
+    public int scoreAdd;
 
 
     //floating
@@ -47,7 +48,9 @@ public class PickUp : MonoBehaviour
             {
                 case TypesOfPickUps.Timer:
                     Debug.Log("Added time");
+                    Score.Points += scoreAdd;
                     Timer.timer += addedTime;
+                    
                     break;
                 case TypesOfPickUps.Multiplyer:
                     Debug.Log("Added multiplyer");
