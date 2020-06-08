@@ -4,58 +4,31 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour
 {
-    public enum TypesOfPickUps {Timer, Multiplyer }
+    public enum TypesOfPickUps { Timer, Multiplyer }
     public TypesOfPickUps pickUpType;
     [SerializeField]
     private int addedTime;
     public int scoreAdd;
+    [Tooltip("This will be set automatically if a parent object contains the AreaSetter Script")] public AreaSetter area;
 
-
-    //floating
-    [SerializeField]
-    private float degreesPerSecond = 15.0f;
-    [SerializeField]
-    private float amplitude = 0.5f;
-    [SerializeField]
-    private float frequency = 1f;
-
-    Vector3 posOffset = new Vector3();
-    Vector3 tempPos = new Vector3();
-
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        posOffset = transform.position;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //spin object
-        transform.Rotate(new Vector3(0f, Time.deltaTime * degreesPerSecond, 0f), Space.World);
-
-        //float
-        tempPos = posOffset;
-        tempPos.y += Mathf.Sin(Time.fixedTime * Mathf.PI * frequency) * amplitude;
-        transform.position = tempPos;
-
+        if (area == null)
+            if (gameObject.GetComponentInParent<AreaSetter>() != null)
+            {
+                area = gameObject.GetComponentInParent<AreaSetter>();
+            }
+        if (area != null)
+            area.AddObj(gameObject);
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            switch (pickUpType)
-            {
-                case TypesOfPickUps.Timer:
-                    Debug.Log("Added time");
-                    Score.Points += scoreAdd;
-                    Timer.timer += addedTime;
-                    
-                    break;
-                case TypesOfPickUps.Multiplyer:
-                    Debug.Log("Added multiplyer");
-                    break;
-            }
+            Score.Points += scoreAdd;
+            Timer.timer += addedTime;
+            if (area != null)
+                area.RemoveObj(gameObject);
             Destroy(this.gameObject);
         }
     }

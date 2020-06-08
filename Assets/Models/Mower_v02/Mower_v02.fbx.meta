@@ -3,7 +3,37 @@ guid: 58eaf9c7c4370df4ca026729592a6e9c
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FlatColours
+    second: {fileID: 2100000, guid: 8713c3545dd528641bbf16a52fac3c19, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal
+    second: {fileID: 2100000, guid: 198e82e7588c92e45a59856bbb3e14d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Propane
+    second: {fileID: 2100000, guid: bd8e4835b4373244e87affd5c31d38f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tyres
+    second: {fileID: 2100000, guid: c7f3e3cd5bc14ce47ab4e73726efd7cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood
+    second: {fileID: 2100000, guid: 8dbc5d58c08850948b8d4531cfc710bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert7
+    second: {fileID: 2100000, guid: 1a02c73424ec1294c84e56a36a32986f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -81,7 +111,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.5
+    globalScale: 50
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

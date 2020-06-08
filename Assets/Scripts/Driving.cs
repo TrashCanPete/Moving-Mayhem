@@ -19,7 +19,7 @@ public class Driving : MonoBehaviour
     public float enginePower = 3600;
     public float reversePower = 2000;
     
-    [Tooltip("Allows you to adjust the engines power at different speeds. The Y axis represents power and the X axis represents current speed(m/s).")]
+    [Tooltip("Allows you to adjust the engines power at different speeds. The Y axis represents power and the X axis represents current speed(KPH).")]
     [SerializeField] AnimationCurve powerBySpeed;
 
     [Range(0, 1)][Tooltip("0 for front wheels drive, 1 for rear wheel drive.")]
@@ -130,7 +130,7 @@ public class Driving : MonoBehaviour
     }
     void ApplyPower(float power)
     {
-        float targetPower = powerBySpeed.Evaluate(localVelocity.z / 40);
+        float targetPower = powerBySpeed.Evaluate(Mathf.Abs(localVelocity.z *3.6f));
         targetPower *= power;
         float frontPower = (targetPower * zAxis) * (1 - powerDistribution);
         float rearPower = (targetPower * zAxis) * (powerDistribution);
