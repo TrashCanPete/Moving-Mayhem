@@ -23,8 +23,6 @@ public class Timer : MonoBehaviour
     public int pointsToGetMoreTime;
 
 
-
-
     void Start()
     {
         ResetTimer();
