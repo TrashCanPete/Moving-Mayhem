@@ -57,15 +57,35 @@ public class Animations : MonoBehaviour
         if (driving.Reversing == false)
         {
             anim.SetBool("Reversing", false);
+            anim.SetBool("Reverse Right", false);
+            anim.SetBool("Reverse Left", false);
         }
-        if (driving.Reversing == true)
+
+        if (driving.Reversing == true && steering.xAxis == 0)
         {
             anim.SetBool("Reversing", true);
+            anim.SetBool("Reverse Right", false);
+            anim.SetBool("Reverse Left", false);
         }
-            if (Timer.timer <= 0)
-            {
-                anim.SetTrigger("Finish Game");
-            }
+
+        
+        if (driving.Reversing == true && steering.xAxis > 0)
+        {
+            anim.SetBool("Reverse Right", true);
+            anim.SetBool("Reverse Left", false);
+        }
+
+        if (driving.Reversing == true && steering.xAxis < 0)
+        {
+            anim.SetBool("Reverse Right", false);
+            anim.SetBool("Reverse Left", true);
+        }
+
+
+        if (Timer.timer <= 0)
+        {
+            anim.SetTrigger("Finish Game");
+        }
     }
 
     private void OnCollisionEnter(Collision collision)

@@ -23,7 +23,7 @@ ModelImporter:
     second: Drift Left
   - first:
       74: -4422161117772985194
-    second: Reversing
+    second: Reverse Transition
   - first:
       74: 7184181597741981858
     second: Reverse Idle
@@ -39,6 +39,15 @@ ModelImporter:
   - first:
       74: -2276691474781237330
     second: Finish Game
+  - first:
+      74: 4245994331525923260
+    second: Reverse Left
+  - first:
+      74: 5642685984055172872
+    second: Reverse Right
+  - first:
+      74: -4790819089152541403
+    second: Reverse
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -247,7 +256,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 1
     - serializedVersion: 16
-      name: Reversing
+      name: Reverse Transition
       takeName: Take 001
       internalID: 0
       firstFrame: 460
@@ -368,6 +377,93 @@ ModelImporter:
       internalID: 0
       firstFrame: 560
       lastFrame: 640
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Reverse Left
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 665
+      lastFrame: 670
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Reverse Right
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 675
+      lastFrame: 680
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Reverse
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 660
+      lastFrame: 665
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
