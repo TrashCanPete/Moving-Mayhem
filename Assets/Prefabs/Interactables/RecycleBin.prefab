@@ -78,6 +78,7 @@ MonoBehaviour:
   piece1: {fileID: 6707372256280258885, guid: 555619b7dffc4f942a89e8f25d3a58f2, type: 3}
   destroyObject: 0
   Colliding: 1
+  points: 8
 --- !u!1 &2924718426364771671
 GameObject:
   m_ObjectHideFlags: 0

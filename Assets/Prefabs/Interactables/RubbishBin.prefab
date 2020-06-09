@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 9211314595555098514}
   - component: {fileID: 3708474010432174713}
   - component: {fileID: 8850079905594591145}
+  - component: {fileID: -1672944860681937921}
   m_Layer: 0
   m_Name: RubbishBin
   m_TagString: Untagged
@@ -142,6 +143,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-1672944860681937921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5300297002967911809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5fb3b691522ddb449c529e1c30b1988, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 8
 --- !u!1001 &3353506668381439462
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -154,11 +168,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: RubbishBin_wheel (1)
       objectReference: {fileID: 0}
-    - target: {fileID: -5931577546505626723, guid: 33fb32ada27737b4883eca90268e6474,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 247aeb1ef24ddc549a4a7e2bdf98840a, type: 2}
     - target: {fileID: -4216859302048453862, guid: 33fb32ada27737b4883eca90268e6474,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -229,6 +238,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -5931577546505626723, guid: 33fb32ada27737b4883eca90268e6474,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 247aeb1ef24ddc549a4a7e2bdf98840a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33fb32ada27737b4883eca90268e6474, type: 3}
 --- !u!4 &7777919152649285372 stripped
@@ -249,11 +263,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: RubbishBin_wheel
       objectReference: {fileID: 0}
-    - target: {fileID: -5931577546505626723, guid: 33fb32ada27737b4883eca90268e6474,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 247aeb1ef24ddc549a4a7e2bdf98840a, type: 2}
     - target: {fileID: -4216859302048453862, guid: 33fb32ada27737b4883eca90268e6474,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -324,6 +333,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -5931577546505626723, guid: 33fb32ada27737b4883eca90268e6474,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 247aeb1ef24ddc549a4a7e2bdf98840a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33fb32ada27737b4883eca90268e6474, type: 3}
 --- !u!4 &3153090111421773759 stripped

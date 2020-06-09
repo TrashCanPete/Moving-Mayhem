@@ -26,6 +26,7 @@ public class PickUp : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             Score.Points += scoreAdd;
+            BonusDisplay.ShowBonus("Cut Weeds", scoreAdd);
             Timer.timeRemaining += addedTime;
             if (area != null)
                 area.RemoveObj(gameObject);

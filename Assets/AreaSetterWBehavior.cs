@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 public class AreaSetterWBehavior : AreaSetter
 {
+    public string notif;
     public UnityEvent OnComplete;
     public override void Cleared()
     {
@@ -11,5 +12,6 @@ public class AreaSetterWBehavior : AreaSetter
         BonusDisplay.ShowBonus("Cleared " + areaName, bonusPoints);
         if (OnComplete.GetPersistentEventCount() > 0)
             OnComplete.Invoke();
+        Notifications.SendNotification(notif);
     }
 }

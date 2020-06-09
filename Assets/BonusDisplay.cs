@@ -14,30 +14,34 @@ public class BonusDisplay : MonoBehaviour
     {
         bonusScript = this;
     }
-    public static void ShowBonus(string text, float bonus)
+    public static void ShowBonus(string text, float bonus, float time = waitTime)
     {
         if (bonusScript != null)
-            bonusScript.Show(text, bonus);
+            bonusScript.Show(text, bonus,time);
     }
-    public void Show(string text, float bonus)
+    public void Show(string text, float bonus, float time)
     {
         GameObject go = Instantiate(display, transform);
         TextMeshProUGUI textElement = go.GetComponentInChildren<TextMeshProUGUI>();
         textElement.text = text + " +" + bonus;
-        foreach(GameObject g in bonuses)
-        {
-            g.transform.Translate(Vector3.up * offset);
-        }
+
         if (bonuses.Count > max)
         {
+            GameObject temp = bonuses[0];
+            bonuses.RemoveAt(0);
             Destroy(bonuses[0]);
         }
+        foreach (GameObject g in bonuses)
+        {
+            if (g != null)
+                g.transform.Translate(Vector3.up * offset);
+        }
         bonuses.Add(go);
-        StartCoroutine(RemoveTime(go));
+        StartCoroutine(RemoveTime(go,time));
     }
-    IEnumerator RemoveTime(GameObject go)
+    IEnumerator RemoveTime(GameObject go, float time)
     {
-        yield return new WaitForSeconds(waitTime);
+        yield return new WaitForSeconds(time);
         if (go != null)
         {
             bonuses.Remove(go);

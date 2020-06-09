@@ -126,6 +126,7 @@ MonoBehaviour:
   piece1: {fileID: 5185170517850235022, guid: ab5da9731f9e6f8438a8787bb4da4292, type: 3}
   destroyObject: 1
   Colliding: 0
+  points: 5
 --- !u!65 &6350867326496528927
 BoxCollider:
   m_ObjectHideFlags: 0
