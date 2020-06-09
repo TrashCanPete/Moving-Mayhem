@@ -46,7 +46,7 @@ MonoBehaviour:
   playerStart: {fileID: 7726408417045806705}
   playertransformPosition: {x: 0, y: 0, z: 0}
   player1: {fileID: 2478265561107497392, guid: 8b58113b6b8be264b923864de9e35223, type: 3}
-  player2: {fileID: 2478265561107497392, guid: a7f58a8f7b80b764792f99b235983b7d, type: 3}
+  player2: {fileID: 2478265561107497392, guid: 629390ec06b0eb7428c0d17f79ea4b35, type: 3}
   player3: {fileID: 2478265561107497392, guid: 8b58113b6b8be264b923864de9e35223, type: 3}
 --- !u!1 &7726408417033562071
 GameObject:

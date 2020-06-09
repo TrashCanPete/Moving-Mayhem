@@ -82,7 +82,7 @@ public class Animations : MonoBehaviour
         }
 
 
-        if (Timer.timer <= 0)
+        if (Timer.timeRemaining <= 0)
         {
             anim.SetTrigger("Finish Game");
         }

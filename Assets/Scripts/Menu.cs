@@ -54,7 +54,6 @@ public class Menu : MonoBehaviour
     public void changeGameScene()
     {
         SceneManager.LoadScene(2);
-        Time.time = 0;
     }
     public void LoadMainMenu()
     {
