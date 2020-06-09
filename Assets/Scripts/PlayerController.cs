@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     }
     private void Update()
     {
-        if (Timer.timer < 0)
+        if (Timer.timeRemaining < 0)
             Disable();
     }
     public void Disable()

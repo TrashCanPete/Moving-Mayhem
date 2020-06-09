@@ -22,7 +22,8 @@ public class Countdown : MonoBehaviour
             count--;
         }
         GameEvents.Instance.GameStart.Invoke();
-        text.text = "GO!";
+        text.fontSize = text.fontSize - 20;
+        text.text = "MOW!";
         yield return new WaitForSeconds(1);
         gameObject.SetActive(false);
     }

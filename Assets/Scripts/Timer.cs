@@ -12,7 +12,7 @@ public class Timer : MonoBehaviour
 {
     private TextMeshProUGUI timerUI;
     [SerializeField]
-    public static float timer;
+    public static float timeRemaining;
     public bool pause;
     [SerializeField]
     private float startTimerValue;
@@ -34,24 +34,24 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
+        
         pointsToGetMoreTime = timesadded * targetPoints;
         if(Score.Points > timesadded * targetPoints)
         {
             timesadded++;
-            timer++;
+            timeRemaining++;
         }
-        int timerInt = Convert.ToInt32(timer);
-        timerUI.text = "" + timerInt;
-        if (timer < 5)
+        TimeSpan time = TimeSpan.FromSeconds(timeRemaining);
+        timerUI.text = time.ToString(@"m\:ss");
+        if (timeRemaining < 5)
         {
-            TimeSpan time =TimeSpan.FromSeconds(timer);
             timerUI.text = time.ToString(@"s\.f");
         }
         if(pause == false)
         {
             TimerCountDown();
         }
-        if(timer <= 0)
+        if(timeRemaining <= 0)
         {
             timerUI.text = "Time's Up!";
             pause = true;
@@ -60,11 +60,11 @@ public class Timer : MonoBehaviour
     }
     void ResetTimer()
     {
-        timer = startTimerValue;
+        timeRemaining = startTimerValue;
     }
     void TimerCountDown()
     {
-        timer -= 1 * Time.deltaTime;
+        timeRemaining -= 1 * Time.deltaTime;
     }
 
     void TimesUp()

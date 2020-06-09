@@ -24,8 +24,16 @@ public class AreaSetter : MonoBehaviour
     {
         grass.Remove(g);
         if (grass.Count == 0)
-            Score.Points += bonusPoints;
+        {
+            Cleared();
+        }
+            
         AreaDisplay.UpdateText();
+    }
+    public virtual void Cleared()
+    {
+        Score.Points += bonusPoints;
+        BonusDisplay.ShowBonus("Cleared " + areaName, bonusPoints);
     }
     public void AddObj(GameObject g)
     {

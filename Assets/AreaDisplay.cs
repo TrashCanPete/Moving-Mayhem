@@ -36,17 +36,15 @@ public class AreaDisplay : MonoBehaviour
     {
         if (setters.Count == 0)
         {
-            text.text = "";
+            if (text != null)
+                text.text = "";
         }
         else
         {
             AreaSetter setter = setters[setters.Count - 1];
             string displayText = setter.areaName;
-            if (setter.grass.Count > 0)
-            {
-                int remainingGrass = setter.grassCount - setter.grass.Count;
-                displayText += " " + remainingGrass + "/" + setter.grassCount;
-            }
+            int remainingGrass = setter.grassCount - setter.grass.Count;
+            displayText += " " + remainingGrass + "/" + setter.grassCount;
             text.text = displayText;
         }
     }

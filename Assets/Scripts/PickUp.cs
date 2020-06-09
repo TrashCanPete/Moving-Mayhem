@@ -11,7 +11,7 @@ public class PickUp : MonoBehaviour
     public int scoreAdd;
     [Tooltip("This will be set automatically if a parent object contains the AreaSetter Script")] public AreaSetter area;
 
-    private void Start()
+    private void Awake()
     {
         if (area == null)
             if (gameObject.GetComponentInParent<AreaSetter>() != null)
@@ -26,7 +26,7 @@ public class PickUp : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             Score.Points += scoreAdd;
-            Timer.timer += addedTime;
+            Timer.timeRemaining += addedTime;
             if (area != null)
                 area.RemoveObj(gameObject);
             Destroy(this.gameObject);
