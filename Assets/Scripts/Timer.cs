@@ -31,6 +31,8 @@ public class Timer : MonoBehaviour
         timerUI = GetComponent<TextMeshProUGUI>();
         timerUI.text = startTimerValue.ToString();
         secondsLeft = startTimerValue;
+        TimeSpan time = TimeSpan.FromSeconds(timeRemaining);
+        timerUI.text = time.ToString(@"m\:ss");
     }
 
     void Update()
