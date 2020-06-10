@@ -10,21 +10,22 @@ public class CollisioAudio : MonoBehaviour
     [SerializeField] float max = 20f;
     AudioSource audioSource;
     public AudioClip[] clips;
+    const float cooldown = 0.1f;
     private void Start()
     {
         audioSource = gameObject.AddComponent(typeof(AudioSource)) as AudioSource;
         audioSource.spatialBlend = 1;
         audioSource.volume = volume;
-        StartCoroutine(EnableSound());
+        StartCoroutine(EnableSound(1));
     }
     private void OnValidate()
     {
         if(audioSource!=null)
             audioSource.volume = volume;
     }
-    IEnumerator EnableSound()
+    IEnumerator EnableSound(float time)
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(time);
         colSoundEnabled = true;
     }
     private void OnCollisionEnter(Collision collision)
@@ -33,6 +34,8 @@ public class CollisioAudio : MonoBehaviour
         {
             float vol = collision.impulse.magnitude / max;
             PlayRandomSound(vol);
+            colSoundEnabled = false;
+            StartCoroutine(EnableSound(cooldown));
         }     
     }
     void PlayRandomSound(float vol)
