@@ -9,6 +9,8 @@ public class Menu : MonoBehaviour
     public Canvas renderCanvas;
     public GameObject highScoresGroup;
     public GameObject titleGroup;
+    public GameObject controlsGroup;
+    public GameObject creditsGroup;
 
 
     private void Start()
@@ -16,7 +18,7 @@ public class Menu : MonoBehaviour
         //dontDestroy = FindObjectOfType<DontDestroyOnLoad>().GetComponent<DontDestroyOnLoad>();
         crunchCamera = GameObject.FindGameObjectWithTag("CrunchCamera");
         renderCanvas = GetComponent<Canvas>();
-        StartCoroutine(SwitchScoresGroupOn());
+        StartCoroutine(SwitchTitleOff());
         
     }
 
@@ -77,6 +79,13 @@ public class Menu : MonoBehaviour
         Application.Quit();
     }
 
+    public IEnumerator SwitchTitleOff()
+    {
+        yield return new WaitForSeconds(6.85f);
+        titleGroup.SetActive(false);
+        StartCoroutine(SwitchScoresGroupOn());
+    }
+
     public IEnumerator SwitchScoresGroupOn()
     {
         yield return new WaitForSeconds(5f);
@@ -85,17 +94,33 @@ public class Menu : MonoBehaviour
         StartCoroutine(SwitchOffScoresGroup());
     }
     
-    void SetScoresActive()
-    {
-        highScoresGroup.SetActive(true);
-        StartCoroutine(SwitchOffScoresGroup());
-    }
-
     public IEnumerator SwitchOffScoresGroup()
     {
-        yield return new WaitForSeconds(9.5f);
+        yield return new WaitForSeconds(9.9f);
         highScoresGroup.SetActive(false);
-        StartCoroutine(SwitchScoresGroupOn());
+        StartCoroutine(SwitchControlsOn());
     }
 
+    public IEnumerator SwitchControlsOn()
+    {
+        yield return new WaitForSeconds(3f);
+        controlsGroup.SetActive(true);
+        StartCoroutine(SwitchCreditsOn());
+    }
+
+    public IEnumerator SwitchCreditsOn()
+    {
+        yield return new WaitForSeconds(6.5f);
+        controlsGroup.SetActive(false);
+        creditsGroup.SetActive(true);
+        StartCoroutine(SwitchTitleOn());
+    }
+
+    public IEnumerator SwitchTitleOn()
+    {
+        yield return new WaitForSeconds(6.5f);
+        titleGroup.SetActive(true);
+        creditsGroup.SetActive(false);
+        StartCoroutine(SwitchTitleOff());
+    }
 }

@@ -26,10 +26,10 @@ public class FlashingText : MonoBehaviour
             //set the Text's text to blank
             flashingText.text = "";
             //display blank text for 0.5 seconds
-            yield return new WaitForSeconds(.25f);
+            yield return new WaitForSeconds(.4f);
             //display “INSERT COIN[S]” for the next 0.5 seconds
             flashingText.text = "INSERT COIN[S]";
-            yield return new WaitForSeconds(.25f);
+            yield return new WaitForSeconds(.4f);
         }
     }
 
