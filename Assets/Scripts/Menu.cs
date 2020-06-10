@@ -8,6 +8,7 @@ public class Menu : MonoBehaviour
     public GameObject crunchCamera;
     public Canvas renderCanvas;
     public GameObject highScoresGroup;
+    public GameObject titleGroup;
 
 
     private void Start()
@@ -67,7 +68,8 @@ public class Menu : MonoBehaviour
 
     public IEnumerator SwitchScoresGroupOn()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(5f);
+        titleGroup.SetActive(false);
         highScoresGroup.SetActive(true);
         StartCoroutine(SwitchOffScoresGroup());
     }
@@ -80,7 +82,7 @@ public class Menu : MonoBehaviour
 
     public IEnumerator SwitchOffScoresGroup()
     {
-        yield return new WaitForSeconds(9.9f);
+        yield return new WaitForSeconds(9.5f);
         highScoresGroup.SetActive(false);
         StartCoroutine(SwitchScoresGroupOn());
     }
