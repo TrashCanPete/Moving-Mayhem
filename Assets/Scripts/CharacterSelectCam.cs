@@ -19,11 +19,12 @@ public class CharacterSelectCam : MonoBehaviour
     [SerializeField]
     private int count;
 
+    public Menu menu;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        menu = GetComponent<Menu>();
         index = 3;
     }
 
@@ -50,7 +51,12 @@ public class CharacterSelectCam : MonoBehaviour
         {
             index--;
         }
-        
+        if (Input.GetButtonDown("Submit"))
+        {
+            menu.SelectCharacter();
+        }
+
+
         switch (count)
         {
             case 2:

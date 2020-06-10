@@ -25,6 +25,17 @@ public class Menu : MonoBehaviour
         if (SceneManager.GetSceneByName("Menu Scene").isLoaded && (Input.anyKey))
         {
             LoadScene(1);
+            if (Input.GetButtonDown("Cancel"))
+            {
+                ExitScene();
+            }
+        }
+        if (SceneManager.GetSceneByName("Character Select Scene").isLoaded)
+        {
+            if (Input.GetButtonDown("Cancel"))
+            {
+                LoadMainMenu();
+            }
         }
     }
     public void LoadScene(int _Level)
