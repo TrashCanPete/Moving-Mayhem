@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 23851702}
   - component: {fileID: 23851701}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52,7 +53,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 23851699}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -68,7 +69,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 23851702}
   m_TextComponent: {fileID: 2090695670}
   m_materialReferenceIndex: 1
@@ -107,7 +108,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 189.91, y: 2.3}
+  m_AnchoredPosition: {x: 189.91, y: 3.6999664}
   m_SizeDelta: {x: 399.64, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &36874720
@@ -138,16 +139,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 047c2737bc478144fbdbc2e65311781d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -241,7 +241,8 @@ GameObject:
   - component: {fileID: 55641811}
   - component: {fileID: 55641810}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -281,7 +282,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 55641808}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -297,7 +298,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 55641811}
   m_TextComponent: {fileID: 36874719}
   m_materialReferenceIndex: 1
@@ -313,7 +314,8 @@ GameObject:
   - component: {fileID: 58070244}
   - component: {fileID: 58070243}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -353,7 +355,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58070241}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -369,7 +371,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 58070244}
   m_TextComponent: {fileID: 1951089551}
   m_materialReferenceIndex: 1
@@ -385,7 +387,8 @@ GameObject:
   - component: {fileID: 75155903}
   - component: {fileID: 75155902}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -425,7 +428,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75155900}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -441,7 +444,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 75155903}
   m_TextComponent: {fileID: 1446083302}
   m_materialReferenceIndex: 1
@@ -480,7 +483,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 199.15, y: -150.69997}
+  m_AnchoredPosition: {x: 202.00002, y: -149.3}
   m_SizeDelta: {x: 422.56, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &242538182
@@ -511,16 +514,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 1a0152576854c0e49bb4e589c25631cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -544,7 +546,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -637,7 +639,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 189.91, y: 64.63}
+  m_AnchoredPosition: {x: 189.91, y: 66.02995}
   m_SizeDelta: {x: 399.64, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &306677339
@@ -668,16 +670,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 8e0e0c48c672350418a4efa554e8df21, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -701,7 +702,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -836,7 +837,8 @@ GameObject:
   - component: {fileID: 465437499}
   - component: {fileID: 465437498}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -876,7 +878,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 465437496}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -892,7 +894,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 465437499}
   m_TextComponent: {fileID: 655375247}
   m_materialReferenceIndex: 1
@@ -931,7 +933,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 199.15, y: -88.37002}
+  m_AnchoredPosition: {x: 202.00002, y: -86.970055}
   m_SizeDelta: {x: 422.56, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &511630833
@@ -962,16 +964,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 1a0152576854c0e49bb4e589c25631cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -995,7 +996,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1065,7 +1066,8 @@ GameObject:
   - component: {fileID: 521505918}
   - component: {fileID: 521505917}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1105,7 +1107,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521505915}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -1121,7 +1123,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 521505918}
   m_TextComponent: {fileID: 1937751584}
   m_materialReferenceIndex: 1
@@ -1160,7 +1162,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 199.15, y: -210.70001}
+  m_AnchoredPosition: {x: 202.00002, y: -209.30005}
   m_SizeDelta: {x: 422.56, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &655375248
@@ -1191,16 +1193,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 1a0152576854c0e49bb4e589c25631cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1224,7 +1225,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1294,7 +1295,8 @@ GameObject:
   - component: {fileID: 722670518}
   - component: {fileID: 722670517}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1334,7 +1336,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 722670515}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -1350,7 +1352,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 722670518}
   m_TextComponent: {fileID: 1313531508}
   m_materialReferenceIndex: 1
@@ -1389,7 +1391,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 189.91, y: 32.8}
+  m_AnchoredPosition: {x: 189.91, y: 35.099915}
   m_SizeDelta: {x: 399.64, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &809635252
@@ -1420,16 +1422,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 65714451d66bc774f91855e4581e9c63, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1453,7 +1454,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1546,7 +1547,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 199.15, y: -120.20001}
+  m_AnchoredPosition: {x: 202.00002, y: -118.80005}
   m_SizeDelta: {x: 422.56, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &916548002
@@ -1577,16 +1578,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Josh
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 1a0152576854c0e49bb4e589c25631cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1610,7 +1610,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1680,7 +1680,8 @@ GameObject:
   - component: {fileID: 921586232}
   - component: {fileID: 921586231}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1720,7 +1721,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 921586229}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -1736,7 +1737,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 921586232}
   m_TextComponent: {fileID: 916548001}
   m_materialReferenceIndex: 1
@@ -1752,7 +1753,8 @@ GameObject:
   - component: {fileID: 936111005}
   - component: {fileID: 936111004}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1792,7 +1794,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936111002}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -1808,7 +1810,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 936111005}
   m_TextComponent: {fileID: 2086782923}
   m_materialReferenceIndex: 1
@@ -1824,7 +1826,8 @@ GameObject:
   - component: {fileID: 1085683855}
   - component: {fileID: 1085683854}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1864,7 +1867,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1085683852}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -1880,7 +1883,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 1085683855}
   m_TextComponent: {fileID: 1639493740}
   m_materialReferenceIndex: 1
@@ -1961,7 +1964,8 @@ GameObject:
   - component: {fileID: 1172577857}
   - component: {fileID: 1172577856}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2001,7 +2005,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1172577854}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -2017,7 +2021,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 1172577857}
   m_TextComponent: {fileID: 1558325443}
   m_materialReferenceIndex: 1
@@ -2033,7 +2037,8 @@ GameObject:
   - component: {fileID: 1238592204}
   - component: {fileID: 1238592203}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2073,7 +2078,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1238592201}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -2089,7 +2094,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 1238592204}
   m_TextComponent: {fileID: 1431201891}
   m_materialReferenceIndex: 1
@@ -2128,7 +2133,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 199.15, y: -150.69997}
+  m_AnchoredPosition: {x: 202.00002, y: -149.3}
   m_SizeDelta: {x: 422.56, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1276892749
@@ -2159,16 +2164,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Josh
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 1a0152576854c0e49bb4e589c25631cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2192,7 +2196,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -2262,7 +2266,8 @@ GameObject:
   - component: {fileID: 1288234062}
   - component: {fileID: 1288234061}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2302,7 +2307,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1288234059}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -2318,7 +2323,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 1288234062}
   m_TextComponent: {fileID: 1276892748}
   m_materialReferenceIndex: 1
@@ -2357,7 +2362,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 199.15, y: -120.20001}
+  m_AnchoredPosition: {x: 202.00002, y: -118.80005}
   m_SizeDelta: {x: 422.56, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1313531509
@@ -2388,16 +2393,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 1a0152576854c0e49bb4e589c25631cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2421,7 +2425,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -2514,7 +2518,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 189.91, y: 64.63}
+  m_AnchoredPosition: {x: 189.91, y: 66.02995}
   m_SizeDelta: {x: 399.64, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1340290732
@@ -2545,16 +2549,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Josh
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 8e0e0c48c672350418a4efa554e8df21, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2578,7 +2581,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -2671,7 +2674,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 189.91, y: -27.7}
+  m_AnchoredPosition: {x: 189.91, y: -26.300034}
   m_SizeDelta: {x: 399.64, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1431201892
@@ -2702,16 +2705,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Josh
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 1a0152576854c0e49bb4e589c25631cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2735,7 +2737,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -2828,7 +2830,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 199.15, y: -180.7}
+  m_AnchoredPosition: {x: 202.00002, y: -179.30003}
   m_SizeDelta: {x: 422.56, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1446083303
@@ -2859,16 +2861,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Josh
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 1a0152576854c0e49bb4e589c25631cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2892,7 +2893,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -2985,7 +2986,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 189.91, y: -57.7}
+  m_AnchoredPosition: {x: 189.91, y: -56.300034}
   m_SizeDelta: {x: 399.64, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1549187190
@@ -3016,16 +3017,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Josh
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 1a0152576854c0e49bb4e589c25631cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3049,7 +3049,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -3119,7 +3119,8 @@ GameObject:
   - component: {fileID: 1554635407}
   - component: {fileID: 1554635406}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3159,7 +3160,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1554635404}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -3175,7 +3176,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 1554635407}
   m_TextComponent: {fileID: 306677338}
   m_materialReferenceIndex: 1
@@ -3214,7 +3215,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 189.91, y: -57.7}
+  m_AnchoredPosition: {x: 189.91, y: -56.3}
   m_SizeDelta: {x: 399.64, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1558325444
@@ -3245,16 +3246,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 1a0152576854c0e49bb4e589c25631cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3278,7 +3278,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -3371,7 +3371,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 189.91, y: -27.7}
+  m_AnchoredPosition: {x: 189.91, y: -26.300034}
   m_SizeDelta: {x: 399.64, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1639493741
@@ -3402,16 +3402,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 1a0152576854c0e49bb4e589c25631cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3435,7 +3434,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -3505,7 +3504,8 @@ GameObject:
   - component: {fileID: 1654219878}
   - component: {fileID: 1654219877}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3545,7 +3545,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1654219875}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -3561,7 +3561,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 1654219878}
   m_TextComponent: {fileID: 1549187189}
   m_materialReferenceIndex: 1
@@ -3577,7 +3577,8 @@ GameObject:
   - component: {fileID: 1656378803}
   - component: {fileID: 1656378802}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3617,7 +3618,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1656378800}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -3633,7 +3634,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 1656378803}
   m_TextComponent: {fileID: 1851568184}
   m_materialReferenceIndex: 1
@@ -3649,7 +3650,8 @@ GameObject:
   - component: {fileID: 1726674372}
   - component: {fileID: 1726674371}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3689,7 +3691,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1726674369}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -3705,7 +3707,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 1726674372}
   m_TextComponent: {fileID: 511630832}
   m_materialReferenceIndex: 1
@@ -3721,7 +3723,8 @@ GameObject:
   - component: {fileID: 1786595046}
   - component: {fileID: 1786595045}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3761,7 +3764,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1786595043}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -3777,7 +3780,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 1786595046}
   m_TextComponent: {fileID: 809635251}
   m_materialReferenceIndex: 1
@@ -3816,7 +3819,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 189.91, y: 2.3}
+  m_AnchoredPosition: {x: 189.91, y: 3.6999664}
   m_SizeDelta: {x: 399.64, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1851568185
@@ -3847,16 +3850,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Josh
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 047c2737bc478144fbdbc2e65311781d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3880,7 +3882,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -3950,7 +3952,8 @@ GameObject:
   - component: {fileID: 1922486412}
   - component: {fileID: 1922486411}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3990,7 +3993,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1922486409}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -4006,7 +4009,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 1922486412}
   m_TextComponent: {fileID: 1340290731}
   m_materialReferenceIndex: 1
@@ -4045,7 +4048,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 199.15, y: -210.70001}
+  m_AnchoredPosition: {x: 202.00002, y: -209.30005}
   m_SizeDelta: {x: 422.56, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1937751585
@@ -4076,16 +4079,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Josh
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 1a0152576854c0e49bb4e589c25631cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4109,7 +4111,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -4202,7 +4204,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 199.15, y: -180.7}
+  m_AnchoredPosition: {x: 202, y: -179.30003}
   m_SizeDelta: {x: 422.56, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1951089552
@@ -4233,16 +4235,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 1a0152576854c0e49bb4e589c25631cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4266,7 +4267,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -4336,7 +4337,8 @@ GameObject:
   - component: {fileID: 2084593288}
   - component: {fileID: 2084593287}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4376,7 +4378,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2084593285}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -4392,7 +4394,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 2084593288}
   m_TextComponent: {fileID: 242538181}
   m_materialReferenceIndex: 1
@@ -4431,7 +4433,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 199.15, y: -88.37002}
+  m_AnchoredPosition: {x: 202.00002, y: -86.970055}
   m_SizeDelta: {x: 422.56, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2086782924
@@ -4462,16 +4464,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Josh
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 1a0152576854c0e49bb4e589c25631cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4495,7 +4496,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -4588,7 +4589,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 189.91, y: 32.8}
+  m_AnchoredPosition: {x: 189.91, y: 35.0999}
   m_SizeDelta: {x: 399.64, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2090695671
@@ -4619,16 +4620,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Josh
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 65714451d66bc774f91855e4581e9c63, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4652,7 +4652,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -4796,7 +4796,8 @@ GameObject:
   - component: {fileID: 1910568156060258637}
   - component: {fileID: 1910568156060258638}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4836,7 +4837,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910568156060258632}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -4852,7 +4853,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 1910568156060258637}
   m_TextComponent: {fileID: 1910568157819146142}
   m_materialReferenceIndex: 1
@@ -4868,7 +4869,8 @@ GameObject:
   - component: {fileID: 1910568156106420749}
   - component: {fileID: 1910568156106420750}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4908,7 +4910,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910568156106420744}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -4924,7 +4926,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 1910568156106420749}
   m_TextComponent: {fileID: 1910568157560144766}
   m_materialReferenceIndex: 1
@@ -4963,8 +4965,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.1, y: 94.5}
-  m_SizeDelta: {x: 192.44, y: 28.73}
+  m_AnchoredPosition: {x: 4.7, y: 94.5}
+  m_SizeDelta: {x: 228.32, y: 28.73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1910568156151208044
 CanvasRenderer:
@@ -4994,8 +4996,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: HIGH SCORES
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c6e62ff4b14071746949150b465cf679, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: a62e8c21c65fa6b4ba5aa2524e22ebc8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 33bcd182cc8042441bbd942b65e65d07, type: 2}
+  m_sharedMaterial: {fileID: -3126647636331110420, guid: 33bcd182cc8042441bbd942b65e65d07,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5037,7 +5040,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 0
+  m_firstOverflowCharacterIndex: 5
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -5066,9 +5069,9 @@ MonoBehaviour:
     spaceCount: 1
     wordCount: 2
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
-    materialCount: 1
+    materialCount: 2
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -5096,7 +5099,7 @@ GameObject:
   - component: {fileID: 1910568156198948787}
   - component: {fileID: 1910568156198948780}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-Black SDF + LiberationSans SDF Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5136,7 +5139,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910568156198948782}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -5152,7 +5155,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 7.3339996
   m_canvasRenderer: {fileID: 1910568156198948787}
   m_TextComponent: {fileID: 1910568156355101756}
   m_materialReferenceIndex: 1
@@ -5253,8 +5256,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: SCORE
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c6e62ff4b14071746949150b465cf679, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: a62e8c21c65fa6b4ba5aa2524e22ebc8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3609c1b92522eed4b9a027a124c82451, type: 2}
+  m_sharedMaterial: {fileID: 4175687337014781248, guid: 3609c1b92522eed4b9a027a124c82451,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5327,7 +5331,7 @@ MonoBehaviour:
     linkCount: 0
     lineCount: 1
     pageCount: 1
-    materialCount: 1
+    materialCount: 2
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -5378,7 +5382,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 199.15, y: -210.70001}
+  m_AnchoredPosition: {x: 202.00002, y: -209.30005}
   m_SizeDelta: {x: 422.56, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1910568156371183025
@@ -5407,18 +5411,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 10.
+  m_text: 10
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 1a0152576854c0e49bb4e589c25631cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5442,7 +5445,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -5477,7 +5480,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1910568156371183024}
-    characterCount: 3
+    characterCount: 2
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -5512,7 +5515,7 @@ GameObject:
   - component: {fileID: 1910568156414872930}
   - component: {fileID: 1910568156414872931}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-Black SDF + LiberationSans SDF Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5532,10 +5535,10 @@ RectTransform:
   m_Father: {fileID: 1910568156151208046}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 228, y: 28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1910568156414872930
 CanvasRenderer:
@@ -5552,7 +5555,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910568156414872925}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -5568,7 +5571,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 7.3339996
   m_canvasRenderer: {fileID: 1910568156414872930}
   m_TextComponent: {fileID: 1910568156151208045}
   m_materialReferenceIndex: 1
@@ -5638,8 +5641,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: RANK
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c6e62ff4b14071746949150b465cf679, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: a62e8c21c65fa6b4ba5aa2524e22ebc8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3609c1b92522eed4b9a027a124c82451, type: 2}
+  m_sharedMaterial: {fileID: 4175687337014781248, guid: 3609c1b92522eed4b9a027a124c82451,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5712,7 +5716,7 @@ MonoBehaviour:
     linkCount: 0
     lineCount: 1
     pageCount: 1
-    materialCount: 1
+    materialCount: 2
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -5740,7 +5744,7 @@ GameObject:
   - component: {fileID: 1910568156595626538}
   - component: {fileID: 1910568156595626539}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-Black SDF + LiberationSans SDF Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5780,7 +5784,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910568156595626533}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -5796,7 +5800,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 7.3339996
   m_canvasRenderer: {fileID: 1910568156595626538}
   m_TextComponent: {fileID: 1910568156489332797}
   m_materialReferenceIndex: 1
@@ -5812,7 +5816,8 @@ GameObject:
   - component: {fileID: 1910568156669818891}
   - component: {fileID: 1910568156669818884}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5852,7 +5857,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910568156669818886}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -5868,7 +5873,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 1910568156669818891}
   m_TextComponent: {fileID: 1910568156836343584}
   m_materialReferenceIndex: 1
@@ -5884,7 +5889,8 @@ GameObject:
   - component: {fileID: 1910568156790864461}
   - component: {fileID: 1910568156790864462}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5924,7 +5930,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910568156790864456}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -5940,7 +5946,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 1910568156790864461}
   m_TextComponent: {fileID: 1910568156371183024}
   m_materialReferenceIndex: 1
@@ -5979,7 +5985,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 189.91, y: -27.7}
+  m_AnchoredPosition: {x: 189.91, y: -26.300034}
   m_SizeDelta: {x: 399.64, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1910568156819998088
@@ -6008,18 +6014,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 4.
+  m_text: 4
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 1a0152576854c0e49bb4e589c25631cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6043,7 +6048,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -6078,7 +6083,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1910568156819998095}
-    characterCount: 2
+    characterCount: 1
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -6136,7 +6141,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 199.15, y: -120.20001}
+  m_AnchoredPosition: {x: 202.00002, y: -118.80005}
   m_SizeDelta: {x: 422.56, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1910568156836343585
@@ -6165,18 +6170,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 7.
+  m_text: 7
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 1a0152576854c0e49bb4e589c25631cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6200,7 +6204,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -6235,7 +6239,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1910568156836343584}
-    characterCount: 2
+    characterCount: 1
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -6305,7 +6309,7 @@ GameObject:
   - component: {fileID: 1910568157049986263}
   - component: {fileID: 1910568157049986256}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-Black SDF + LiberationSans SDF Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6345,7 +6349,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910568157049986258}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -6361,7 +6365,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 7.3339996
   m_canvasRenderer: {fileID: 1910568157049986263}
   m_TextComponent: {fileID: 1910568157844844484}
   m_materialReferenceIndex: 1
@@ -6400,7 +6404,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 189.91, y: 64.63}
+  m_AnchoredPosition: {x: 189.91, y: 66.02995}
   m_SizeDelta: {x: 399.64, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1910568157238112071
@@ -6429,18 +6433,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1.
+  m_text: 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 8e0e0c48c672350418a4efa554e8df21, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6464,7 +6467,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -6499,7 +6502,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1910568157238112070}
-    characterCount: 2
+    characterCount: 1
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -6534,7 +6537,8 @@ GameObject:
   - component: {fileID: 1910568157344497608}
   - component: {fileID: 1910568157344497609}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6574,7 +6578,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910568157344497611}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -6590,7 +6594,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 1910568157344497608}
   m_TextComponent: {fileID: 1910568157702881088}
   m_materialReferenceIndex: 1
@@ -6612,7 +6616,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1910568157470961325
 Transform:
   m_ObjectHideFlags: 0
@@ -6710,7 +6714,8 @@ GameObject:
   - component: {fileID: 1910568157518214458}
   - component: {fileID: 1910568157518214459}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6750,7 +6755,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910568157518214453}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -6766,7 +6771,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 1910568157518214458}
   m_TextComponent: {fileID: 1910568156819998095}
   m_materialReferenceIndex: 1
@@ -6805,7 +6810,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 189.91, y: 2.3}
+  m_AnchoredPosition: {x: 189.91, y: 3.6999664}
   m_SizeDelta: {x: 399.64, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1910568157560144767
@@ -6834,18 +6839,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3.
+  m_text: 3
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 047c2737bc478144fbdbc2e65311781d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6869,7 +6873,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -6904,7 +6908,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1910568157560144766}
-    characterCount: 2
+    characterCount: 1
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -6939,7 +6943,8 @@ GameObject:
   - component: {fileID: 1910568157560634481}
   - component: {fileID: 1910568157560634482}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6979,7 +6984,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910568157560634476}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -6995,7 +7000,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 1910568157560634481}
   m_TextComponent: {fileID: 1910568157985395937}
   m_materialReferenceIndex: 1
@@ -7011,7 +7016,8 @@ GameObject:
   - component: {fileID: 1910568157583369465}
   - component: {fileID: 1910568157583369466}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7051,7 +7057,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910568157583369460}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -7067,7 +7073,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 1910568157583369465}
   m_TextComponent: {fileID: 1910568157720632160}
   m_materialReferenceIndex: 1
@@ -7106,7 +7112,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 189.91, y: 32.8}
+  m_AnchoredPosition: {x: 189.91, y: 35.099915}
   m_SizeDelta: {x: 399.64, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1910568157702881089
@@ -7135,18 +7141,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2.
+  m_text: 2
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 65714451d66bc774f91855e4581e9c63, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7170,7 +7175,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -7205,7 +7210,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1910568157702881088}
-    characterCount: 2
+    characterCount: 1
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -7263,7 +7268,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 189.91, y: -57.7}
+  m_AnchoredPosition: {x: 189.91, y: -56.300034}
   m_SizeDelta: {x: 399.64, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1910568157720632161
@@ -7292,18 +7297,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 5.
+  m_text: 5
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 1a0152576854c0e49bb4e589c25631cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7327,7 +7331,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -7362,7 +7366,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1910568157720632160}
-    characterCount: 2
+    characterCount: 1
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -7420,7 +7424,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 199.15, y: -88.37002}
+  m_AnchoredPosition: {x: 202.00002, y: -86.970055}
   m_SizeDelta: {x: 422.56, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1910568157744372307
@@ -7449,18 +7453,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 6.
+  m_text: 6
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 1a0152576854c0e49bb4e589c25631cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7484,7 +7487,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -7519,7 +7522,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1910568157744372300}
-    characterCount: 2
+    characterCount: 1
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -7577,7 +7580,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 199.15, y: -150.69997}
+  m_AnchoredPosition: {x: 202.00002, y: -149.3}
   m_SizeDelta: {x: 422.56, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1910568157819146143
@@ -7606,18 +7609,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 8.
+  m_text: 8
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 1a0152576854c0e49bb4e589c25631cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7641,7 +7643,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -7676,7 +7678,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1910568157819146142}
-    characterCount: 2
+    characterCount: 1
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -7765,8 +7767,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: NAME
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c6e62ff4b14071746949150b465cf679, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: a62e8c21c65fa6b4ba5aa2524e22ebc8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3609c1b92522eed4b9a027a124c82451, type: 2}
+  m_sharedMaterial: {fileID: 4175687337014781248, guid: 3609c1b92522eed4b9a027a124c82451,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7839,7 +7842,7 @@ MonoBehaviour:
     linkCount: 0
     lineCount: 1
     pageCount: 1
-    materialCount: 1
+    materialCount: 2
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -7955,7 +7958,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 199.15, y: -180.7}
+  m_AnchoredPosition: {x: 202.00002, y: -179.30003}
   m_SizeDelta: {x: 422.56, y: 20.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1910568157985395938
@@ -7984,18 +7987,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 9.
+  m_text: 9
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 59e68feb5145080488380af759b7c768, type: 2}
-  m_sharedMaterial: {fileID: -3125559279294481833, guid: 59e68feb5145080488380af759b7c768,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8df080f14778cfd499152998290b660f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 1a0152576854c0e49bb4e589c25631cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286043903
-  m_fontColor: {r: 1, g: 0.8420685, b: 0.4669811, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8019,7 +8021,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -8054,7 +8056,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1910568157985395937}
-    characterCount: 2
+    characterCount: 1
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -8179,7 +8181,8 @@ GameObject:
   - component: {fileID: 1910568158111392874}
   - component: {fileID: 1910568158111392875}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8219,7 +8222,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910568158111392869}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -8235,7 +8238,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 1910568158111392874}
   m_TextComponent: {fileID: 1910568157238112070}
   m_materialReferenceIndex: 1
@@ -8251,7 +8254,8 @@ GameObject:
   - component: {fileID: 1910568158118228849}
   - component: {fileID: 1910568158118228850}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Montserrat-Black SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [Montserrat-BlackItalic SDF Material + LiberationSans SDF
+    Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8291,7 +8295,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910568158118228851}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -8307,7 +8311,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0
+  m_padding: 5.147
   m_canvasRenderer: {fileID: 1910568158118228849}
   m_TextComponent: {fileID: 1910568157744372300}
   m_materialReferenceIndex: 1
