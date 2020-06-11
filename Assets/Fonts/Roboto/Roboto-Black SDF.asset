@@ -712,6 +712,20 @@ MonoBehaviour:
       m_Height: 65
     m_Scale: 1
     m_AtlasIndex: 0
+  - m_Index: 61
+    m_Metrics:
+      m_Width: 58
+      m_Height: 64
+      m_HorizontalBearingX: -1
+      m_HorizontalBearingY: 64
+      m_HorizontalAdvance: 57
+    m_GlyphRect:
+      m_X: 319
+      m_Y: 310
+      m_Width: 57
+      m_Height: 64
+    m_Scale: 1
+    m_AtlasIndex: 0
   m_CharacterTable:
   - m_ElementType: 1
     m_Unicode: 80
