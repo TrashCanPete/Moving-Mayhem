@@ -4166,6 +4166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseObj: {fileID: 248657037}
+  canPauseGame: 0
 --- !u!1001 &2680234156351553838
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4612,7 +4613,7 @@ PrefabInstance:
     - target: {fileID: 6870798604895118924, guid: 2e88f33051ac65c40b5b4b99aa94505c,
         type: 3}
       propertyPath: startTimerValue
-      value: 180
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e88f33051ac65c40b5b4b99aa94505c, type: 3}
