@@ -72,6 +72,8 @@ public class Timer : MonoBehaviour
     }
     void EndEvent()
     {
+
+        AnalyticsController.Controller.TotalGameTime();
         GameEvents.Instance.GameEnd.Invoke();
         pause = true;
         timerUI.text = "Time's Up!";
@@ -89,7 +91,6 @@ public class Timer : MonoBehaviour
     void TimesUp()
     {
 #if !UNITY_EDITOR                                                 //currency   //amount    //item type   //item ID
-        GameAnalytics.NewResourceEvent(GAResourceFlowType.Source, "Points", Score.Points, "Mowed_Grass", "score_G");
 #endif
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }

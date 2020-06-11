@@ -6,22 +6,32 @@ public class Pause : MonoBehaviour
 {
     public static bool isPaused = false;
     public GameObject pauseObj;
+    [SerializeField]
+    private bool canPauseGame = false;
     private void Update()
     {
-        if (Input.GetButtonDown("Cancel"))
+        if (canPauseGame == false)
         {
-            isPaused = !isPaused;
-            if (isPaused == true)
+            return;
+        }
+        else
+        {
+            if (Input.GetButtonDown("Cancel"))
             {
-                Time.timeScale = 0;
-                pauseObj.SetActive(true);
-            }
-            else if (isPaused == false)
-            {
-                Time.timeScale = 1;
-                pauseObj.SetActive(false);
+                isPaused = !isPaused;
+                if (isPaused == true)
+                {
+                    Time.timeScale = 0;
+                    pauseObj.SetActive(true);
+                }
+                else if (isPaused == false)
+                {
+                    Time.timeScale = 1;
+                    pauseObj.SetActive(false);
+                }
             }
         }
+
         /*if (Input.GetButtonDown("Pause"))
         {
             isPaused = !isPaused;

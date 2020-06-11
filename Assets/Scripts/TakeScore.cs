@@ -17,11 +17,14 @@ public class TakeScore : MonoBehaviour
 
     public void SendScore()
     {
+        AnalyticsController.Controller.SendScore();
+        AnalyticsController.Controller.SendName(text.text);
+        AnalyticsController.Controller.CharacterID(characterNumber);
         {
-#if !UNITY_EDITOR                                                 //currency   //amount    //item type   //item ID
-        GameAnalytics.NewResourceEvent(GAResourceFlowType.Source, "Points", Score.Points, "Mowed_Grass", "score_ID");
-        GameAnalytics.NewResourceEvent(GAResourceFlowType.Source, "Name", text.text, "Player_Initials", "Player_ID");
-        GameAnalytics.NewResourceEvent(GAResourceFlowType.Source, "Character", characterNumber, "Character_Type", Character_ID)
+#if !UNITY_EDITOR
+        
+            
+
 #endif
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }

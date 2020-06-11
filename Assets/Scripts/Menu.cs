@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
+using GameAnalyticsSDK;
+using GameAnalyticsSDK.Setup;
+using GameAnalyticsSDK.Events;
 public class Menu : MonoBehaviour
 {
     public DontDestroyOnLoad dontDestroy;
@@ -76,6 +80,9 @@ public class Menu : MonoBehaviour
     }
     public void ExitScene()
     {
+        AnalyticsController.Controller.TotalApplicationTime();
+        AnalyticsController.Controller.ExitGame();
+
         Application.Quit();
     }
 

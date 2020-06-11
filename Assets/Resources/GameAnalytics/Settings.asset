@@ -62,8 +62,13 @@ MonoBehaviour:
   CustomDimensions03: []
   ResourceItemTypes:
   - Mowed_Grass
+  - Player_Name
+  - Game_Time
   ResourceCurrencies:
   - Points
+  - Character
+  - TimeOpened
+  - GameTime
   LastCreatedGamePlatform: -1
   Platforms: 02000000
   CurrentInspectorState: 1
