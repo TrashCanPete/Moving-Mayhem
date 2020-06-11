@@ -24,7 +24,6 @@ public class LoadingScreen : MonoBehaviour
     {
         if (playerCanPlay == true && (Input.anyKey))
         {
-            loadingCanvas.SetActive(false);
             SceneManager.LoadScene(3);
         }
     }
