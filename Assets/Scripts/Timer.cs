@@ -73,11 +73,12 @@ public class Timer : MonoBehaviour
     void EndEvent()
     {
 
-        AnalyticsController.Controller.TotalGameTime();
+
         GameEvents.Instance.GameEnd.Invoke();
         pause = true;
         timerUI.text = "Time's Up!";
         Invoke("TimesUp", 5);
+        AnalyticsController.Controller.TotalGameTime();
     }
     void ResetTimer()
     {

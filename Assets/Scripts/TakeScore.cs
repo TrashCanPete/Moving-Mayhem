@@ -17,17 +17,12 @@ public class TakeScore : MonoBehaviour
 
     public void SendScore()
     {
+#if !UNITY_EDITOR
         AnalyticsController.Controller.SendScore();
         AnalyticsController.Controller.SendName(text.text);
         AnalyticsController.Controller.CharacterID(characterNumber);
-        {
-#if !UNITY_EDITOR
-        
-            
-
 #endif
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
+        //SceneManager.LoadScene(0);
         Highscores.AddNewHighscore(text.text, Score.Points);
     }
 }

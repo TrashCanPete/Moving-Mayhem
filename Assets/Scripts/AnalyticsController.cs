@@ -31,8 +31,11 @@ public class AnalyticsController : MonoBehaviour
 
     public void SendScore()
     {
+#if !UNITY_EDITOR
+
         //tracking player score at end of game
         GameAnalytics.NewResourceEvent(GAResourceFlowType.Source, "Points", Score.Points, "Mowed_Grass", "score_ID");
+#endif
     }
     public void SendName(string playerName)
     {
