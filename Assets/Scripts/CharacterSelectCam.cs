@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 public class CharacterSelectCam : MonoBehaviour
 {
     public static int characterIndex = 0;
@@ -20,6 +20,7 @@ public class CharacterSelectCam : MonoBehaviour
     private int count;
 
     public Menu menu;
+    public UnityEvent OnSelect;
 
     // Start is called before the first frame update
     void Start()
@@ -53,14 +54,18 @@ public class CharacterSelectCam : MonoBehaviour
         }
         if (Input.GetButtonDown("Submit"))
         {
-            menu.SelectCharacter();
+            if (characterIndex!=2)
+            {// THIS PREVENTS THE PLAYER FROM SELECTING THE THIRD CHARACTER THAT ISN'T AVAILABLE YET.
+                if (OnSelect.GetPersistentEventCount() > 0)
+                    OnSelect.Invoke();
+                menu.SelectCharacter();
+                this.enabled = false;
+            }
         }
-
-
         switch (count)
         {
             case 2:
-                Debug.Log("count = "+ count);
+                Debug.Log("count = " + count);
                 characterIndex = 2;
                 break;
             case 1:
@@ -73,6 +78,6 @@ public class CharacterSelectCam : MonoBehaviour
                 break;
 
         }
-        
+
     }
 }
