@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 679376246242931181}
   m_Layer: 0
   m_Name: BrokenHouse
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

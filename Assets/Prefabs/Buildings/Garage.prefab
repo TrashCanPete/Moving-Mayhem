@@ -163,8 +163,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8520416638314394318}
   m_Layer: 0
-  m_Name: PlayeHouse
-  m_TagString: Untagged
+  m_Name: Garage
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
