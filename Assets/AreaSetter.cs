@@ -5,6 +5,7 @@ public class AreaSetter : MonoBehaviour
 {
     public string areaName;
     public int bonusPoints;
+    public int bonusTime;
     [HideInInspector] public List<GameObject> grass = new List<GameObject>();
     [HideInInspector] public int grassCount = 0;
     [HideInInspector] public bool touchingPlayer = false;
@@ -33,6 +34,7 @@ public class AreaSetter : MonoBehaviour
     public virtual void Cleared()
     {
         Score.Points += bonusPoints;
+        Timer.timeRemaining += bonusTime;
         BonusDisplay.ShowBonus("Cleared " + areaName, bonusPoints);
     }
     public void AddObj(GameObject g)
