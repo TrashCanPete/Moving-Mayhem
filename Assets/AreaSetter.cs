@@ -35,6 +35,7 @@ public class AreaSetter : MonoBehaviour
     {
         Score.Points += bonusPoints;
         Timer.timeRemaining += bonusTime;
+        Notifications.SendNotification("+" + bonusTime + " seconds!");
         BonusDisplay.ShowBonus("Cleared " + areaName, bonusPoints);
     }
     public void AddObj(GameObject g)

@@ -9,6 +9,7 @@ public class AreaSetterWBehavior : AreaSetter
     public override void Cleared()
     {
         Score.Points += bonusPoints;
+        Timer.timeRemaining += bonusTime;
         BonusDisplay.ShowBonus("Cleared " + areaName, bonusPoints);
         if (OnComplete.GetPersistentEventCount() > 0)
             OnComplete.Invoke();
